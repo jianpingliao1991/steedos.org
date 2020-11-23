@@ -6,8 +6,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Steedos Software', // Usually your GitHub org/user name.
-  projectName: 'Steedos', // Usually your repo name.
+  organizationName: 'steedos', // Usually your GitHub org/user name.
+  projectName: 'steedos.org', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Steedos Platform',
