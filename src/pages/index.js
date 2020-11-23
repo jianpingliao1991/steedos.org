@@ -14,7 +14,7 @@ function Home() {
       description="">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
+      <div class="mt-6 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6">
         <div class="text-center">
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
             <span class="block">Open Source </span>
@@ -28,13 +28,11 @@ function Home() {
       </div>
     </div>
     <div class="relative">
-      <div class="absolute inset-0 flex flex-col" aria-hidden="true">
-        <div class="flex-1"></div>
-        <div class="flex-1 w-full bg-gray-800"></div>
-      </div>
+     
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <img class="relative rounded-lg shadow-lg" src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.jpg" alt="App screenshot"/>
+        <img class="relative " src="/assets/platform/platform-overview.png" alt="Steedos Overview"/>
       </div>
+      <div class="my-10"></div>
     </div>
      
     </Layout>
