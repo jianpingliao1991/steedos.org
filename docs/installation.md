@@ -38,6 +38,7 @@ my-app
 │           ├── fields
 │           │   └── name.field.yml
 │           │   └── description.field.yml
+│           │   └── isDone.field.yml
 │           ├── listviews
 │           │   └── all.listView.yml
 │           │   └── recent.listView.yml
