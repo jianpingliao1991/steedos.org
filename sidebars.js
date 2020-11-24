@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    "Steedos Platform": ['overview'],
-    "Metadata": ['metadata/object', 'metadata/field', 'metadata/listview'],
+    "Getting Started": ['overview'],
+    "Metadata API": ['metadata/object', 'metadata/field', 'metadata/listview'],
   },
 };
