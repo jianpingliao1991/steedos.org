@@ -10,20 +10,21 @@ module.exports = {
   projectName: 'steedos.org', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Steedos Platform',
+      title: 'Steedos',
       // style: 'dark',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.png',
       },
-      items: [
+      items: [{
+        to: '/', label: 'Platform', position: 'left', activeBasePath: '/none'},
         {
           to: 'docs/overview',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/steedos/steedos-platform',
           label: 'GitHub',
