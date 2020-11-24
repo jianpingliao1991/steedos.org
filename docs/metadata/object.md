@@ -43,3 +43,12 @@ enable_api: true
 enable_share: true
 enable_audit: true
 ```
+
+## Declarative Metadata Additional Components
+
+CustomObject definitions can include additional components defined in the custom object for declarative metadata. The following components are defined in the CustomObject:
+
+- CustomField
+- ListView
+- Validation Rule
+- Workflow Rule

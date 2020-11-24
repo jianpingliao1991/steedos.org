@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Steedos Platform',
+  title: 'Steedos',
   tagline: 'Open Source Low-Code Development Platform',
   url: 'https://www.steedos.org',
   baseUrl: '/',
@@ -52,15 +52,15 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/questions/tagged/steedos',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com/invite/steedos',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/steedos',
             },
           ],
         },
