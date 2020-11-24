@@ -139,9 +139,9 @@ enable_audit: true
 
 CustomObject definitions can include additional components defined in the custom object for declarative metadata. The following components are defined in the CustomObject:
 
-- Fields
-- ListViews
-- Buttons
-- Permissions
-- Validation Rule
-- Workflow Rule
+- [Fields](field)
+- [ListViews](listview)
+- [Buttons](button)
+- [Permissions](permission)
+- [Validation Rule](validation_rule)
+- [Workflow Rule](workflow_rule)
