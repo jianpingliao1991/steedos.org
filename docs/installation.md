@@ -19,3 +19,37 @@ cd my-app
 yarn
 yarn start
 ```
+
+## Project structure
+
+Assuming you chose the classic template and named your site my-app, you will see the following files generated under a new directory my-app/:
+
+
+```sh
+my-app
+├── steedos-app/main/default
+│   ├── applications
+│   │   └── my-app.app.yml
+│   └── objects
+│       └── todo
+│           ├── buttons
+│           │   └── markDone.button.yml
+│           │   └── markDone.button.js
+│           ├── fields
+│           │   └── name.field.yml
+│           │   └── description.field.yml
+│           ├── listviews
+│           │   └── all.listView.yml
+│           │   └── recent.listView.yml
+│           ├── permissions
+│           │   └── user.permission.yml
+│           │   └── admin.permission.yml
+│           └── todo.object.yml
+├── .env
+├── .gitignore
+├── package.json
+├── README.md
+├── server.js
+├── steedos-config.yml
+└── yarn.lock
+```
