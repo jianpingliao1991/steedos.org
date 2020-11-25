@@ -244,16 +244,16 @@ priority:
 
 ```yml
 name: rating
-label: 分级
+label: Rating
 type: select
 sortable: true
 options:
-  - label: 非常重要
-    value: Hot
-  - label: 重要
-    value: Warm
-  - label: 普通
-    value: Cold
+  - label: Hot
+    value: hot
+  - label: Warm
+    value: warm
+  - label: Cold
+    value: cold
 inlineHelpText: 您如何划分此客户等级的分类，例如，普通、重要。
 sort_no: 270
 ```
