@@ -20,6 +20,12 @@ yarn
 yarn start
 ```
 
+You can create a steedos app of specified version by the following cli code:
+
+```bash
+npx create-steedos-app@1.23.0-alpha.1 my-app
+```
+
 ## Project structure
 
 Assuming you chose the classic template and named your site my-app, you will see the following files generated under a new directory my-app/:
