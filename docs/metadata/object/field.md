@@ -240,6 +240,27 @@ priority:
   defaultValue: normal
 ```
 
+### sort_no
+
+The field type is number.
+
+In interface typography, the sequence of fields is displayed by default in the order of the fields themselves, but the default collation can be overridden by setting sort Numbers for some fields.
+
+Specific rules are as follows:
+
+- Changing the order of the fields between non-grouped fields or setting their `sort_no` property can achieve the typesetting of the sequential display order.
+- Among the grouped fields, the order of each field can also be changed or `sort_no` can be used to specify the sorting order between the grouped fields. If the sort number of each field in the same field group is different, the field with the smallest sort number shall take precedence.
+- The grouped fields always appear after the non-grouped fields, that is, at the bottom.
+- Fields that have no `sort_no` set will be next to fields that have `sort_no` set, that is, you need only to set the `sort_no` property of the first few fields that you want to be in the first row, and the other fields will automatically be next.
+
+### reference_to
+
+The field type is text.
+
+Represents which object the field references to.
+
+Applies to lookup, master/detail type fields. If specified, this field will reference a specific object, and the field value will be the `_id` attribute of one or more referenced records.
+
 ## Declarative Metadata Sample Definition
 
 ```yml
@@ -254,6 +275,6 @@ options:
     value: warm
   - label: Cold
     value: cold
-inlineHelpText: 您如何划分此客户等级的分类，例如，普通、重要。
+inlineHelpText: How do you classify this customer level, for example, ordinary, important.
 sort_no: 270
 ```
