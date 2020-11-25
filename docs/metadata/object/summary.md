@@ -1,6 +1,6 @@
 ---
 title: Object
-sidebar_label: Summary
+sidebar_label: Object
 ---
 
 Represents a custom object that stores data unique to your org or an external object that maps to data stored outside your org.This type extends the [Metadata](../metadata) metadata type and inherits its name field.
