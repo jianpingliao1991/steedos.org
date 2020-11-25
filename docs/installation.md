@@ -14,7 +14,7 @@ Steedos Platform is essentially a set of npm packages that can be installed over
 The easiest way to install Steedos is to use the command line tool that helps you create a template project. You can run this command anywhere in a new empty repository or within an existing repository, it will create a new directory containing the scaffolded files.
 
 ```bash
-yarn create steedos-app my-app
+npx create-steedos-app my-app
 cd my-app
 yarn
 yarn start
