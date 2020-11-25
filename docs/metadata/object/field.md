@@ -2,7 +2,7 @@
 title: Field
 ---
 
-Represents the metadata associated with a field. Use this metadata type to create, update, or delete custom field definitions on standard, custom, and external objects or standard field definitions on standard objects. This type extends the Metadata metadata type and inherits its fullName field.
+Represents the metadata associated with a field. Use this metadata type to create, update, or delete custom field definitions on standard, custom, and external objects or standard field definitions on standard objects. This type extends the [Metadata](../metadata) metadata type and inherits its name field.
 
 Specify the full name whenever you create or update a field. For example, a custom field on a custom object:
 

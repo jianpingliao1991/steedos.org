@@ -3,7 +3,7 @@ title: ListView
 ---
 
 ListView allows you to see a filtered list of records, such as contacts, accounts, or custom objects.
-This type extends the Metadata metadata type and inherits its fullName field. See “Create a Custom List View in Salesforce Classic” in Salesforce Help.
+This type extends the [Metadata](../metadata) metadata type and inherits its name field. See “Create a Custom List View in Salesforce Classic” in Salesforce Help.
 
 > List views with the Visible only to me Restrict Visibility option are not accessible in Metadata API. Each of these list views is associated with a particular user.
 
