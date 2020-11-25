@@ -40,11 +40,19 @@ Unless otherwise noted, all fields are createable, filterable, and nillable.
 
 The field type is text.
 
+This value cannot be null.
+
 The name of the table in the data source that contains the data for the object.
+
+To comply with the naming convention, only lowercase letters, Numbers, must start with a letter, cannot end with an underscore character or contain two consecutive underscore characters.
+
+Case sensitive. It is recommended to use all lowercase letters
 
 ### label
 
 The field type is text.
+
+This value cannot be null.
 
 Label that represents the object throughout the Steedos user interface.
 
@@ -59,6 +67,18 @@ The name of the icon that mark the object throughout the Steedos user interface.
 We recommend that you make object icons unique across all standard, custom, and external objects in the org.
 
 For now, you can only choose one icon from [Light Design System](https://www.lightningdesignsystem.com/icons/)'s standard icons to set the icon name.
+
+### is_enable
+
+The field type is boolean.
+
+Whether to enable the object, only the enabled object can be displayed in the end user interface. Takes effect by default.
+
+### description
+
+The field type is text.
+
+Description that represents the object.
 
 ### enable_files
 
