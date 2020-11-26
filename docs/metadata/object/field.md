@@ -67,7 +67,7 @@ Case sensitive. It is recommended to use all lowercase letters
 
 The field type is text.
 
-Label that represents the object field throughout the steedos user interface.
+Label that represents the object field throughout the Steedos user interface.
 
 We recommend that you make object field labels unique across all fields of it's object.
 
@@ -137,7 +137,7 @@ The field type is boolean.
 
 Indicates whether a ordering rule of this field can be added or removed by clicking on the field column of the list view.
 
-For a sortable field the steedos automatically creates an index for that field.
+For a sortable field the Steedos automatically creates an index for that field.
 
 By default, due to database performance, all fields on the object cannot be sorted.
 
@@ -163,7 +163,7 @@ Indicates whether the field is unique. If true, a unique index is created for th
 
 The field type is boolean.
 
-Indicates whether the field is hidden throughout the steedos user interface. If true, this field is not shown in lists, view, edit, filter of steedos user interface, and so on, but can be referenced in scripts or configured in filter conditions.
+Indicates whether the field is hidden throughout the Steedos user interface. If true, this field is not shown in lists, view, edit, filter of Steedos user interface, and so on, but can be referenced in scripts or configured in filter conditions.
 
 ### omit
 
@@ -185,7 +185,7 @@ If the object does not have a name field, you need to mark an other field as tit
 
 The field type is boolean.
 
-If this property is configured, the contents of this field are ignored in steedos when validating data formats.
+If this property is configured, the contents of this field are ignored in Steedos when validating data formats.
 
 ### min/max
 
@@ -231,7 +231,7 @@ Applies to `select` type fields. When the specified Picklist record exists, over
 
 The following example defines a country field that lists all the optional country items for drop-down selection.
 
-In this example, you need to add a `picklist` record with a code value of `countryList` in the steedos setup interface, and maintain the individual country options in it.
+In this example, you need to add a `picklist` record with a code value of `countryList` in the Steedos setup interface, and maintain the individual country options in it.
 
 ```yml
 country:
@@ -298,7 +298,7 @@ Applies to `lookup` type fields. If specified, this field limits the selection b
 
 <!-- See [Lookup Field](url) for more information. -->
 
-<!-- For now, only [[" Priority ", "eq", "Normal "] filtering in simple format is supported, This will later be integrated to support [Common Filtering Conditions](url) in steedos. -->
+<!-- For now, only [[" Priority ", "eq", "Normal "] filtering in simple format is supported, This will later be integrated to support [Common Filtering Conditions](url) in Steedos. -->
 
 Alternatively, you can use the standard [OData filtering criteria](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter) as an alternative.
 
@@ -338,7 +338,7 @@ For now, the options are text, number, currency, boolean, date and datetime.
 
 The field type is text.
 
-It means how to handle the blank value of a field in steedos.
+It means how to handle the blank value of a field in Steedos.
 
 The options are zeroes and blanks.
 
