@@ -3,7 +3,7 @@ title: Object
 sidebar_label: Object
 ---
 
-Represents a custom object that stores data unique to your org or an external object that maps to data stored outside your org. 
+Represents a custom object that stores data unique to your org or an external object that maps to data stored outside your org.
 
 <!-- This type extends the [Metadata](../metadata) metadata type and inherits its name field. -->
 
@@ -35,6 +35,32 @@ Custom object names are automatically appended with __c. The file suffix is .obj
 External object names are automatically appended with __x. The file suffix is .object.yml for the external object file.
 
 Custom, standard, and external objects are stored in the objects folder in the corresponding package directory.
+
+```sh
+my-app
+├── steedos-app/main/default
+├── ...
+│   └── objects
+// highlight-start
+│       └── accounts
+│           └── buttons
+│               └── enableSupplier.button.yml
+│               └── enableSupplier.button.js
+│               └── ...
+│           └── fields
+│               └── rating.field.yml
+│               └── ...
+│           └── listviews
+│               └── mine.listView.yml
+│               └── ...
+│           └── permissions
+│               └── contract_manager.permission.yml
+│               └── ...
+│           └── accounts.object.yml
+│       └── ...
+// highlight-end
+├── ...
+```
 
 ## Fields
 
@@ -148,7 +174,7 @@ Whether to track the modification history of the fields on the current object, a
 
 ## Declarative Metadata Sample Definition
 
-```yml
+```yml title="my-app/steedos-app/main/default/objects/accounts/listviews/accounts.object.yml"
 name: accounts
 label: Accounts
 icon: account
@@ -166,9 +192,9 @@ enable_audit: true
 
 CustomObject definitions can include additional components defined in the custom object for declarative metadata. The following components are defined in the CustomObject:
 
+- [Buttons](button)
 - [Fields](field)
 - [ListViews](listview)
-- [Buttons](button)
 - [Permissions](permission)
 - [Validation Rule](validation_rule)
 - [Workflow Rule](workflow_rule)

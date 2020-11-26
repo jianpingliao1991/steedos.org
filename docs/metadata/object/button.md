@@ -10,9 +10,10 @@ There are three built-in basic operations: add (standard_new), edit (standard_ed
 
 Custom button are defined as additional part of a standard or custom object.
 
-```txt title="directory location for custom button on a standard or custom object"
-steedos-app # root directory of your steedos app
-├── src
+```sh
+my-app
+├── steedos-app/main/default
+├── ...
 │   └── objects
 │       └── accounts
 // highlight-start
@@ -27,13 +28,13 @@ steedos-app # root directory of your steedos app
 
 A sample yml and js definition of a custom button in a custom object is shown below.
 
-```yml title="src/objects/accounts/buttons/enableSupplier.button.yml"
+```yml title="my-app/steedos-app/main/default/objects/accounts/buttons/enableSupplier.button.yml"
 label: Enable as a supplier
 'on': record_only_more
 name: enableSupplier
 ```
 
-```js title="src/objects/accounts/buttons/enableSupplier.button.js"
+```js title="my-app/steedos-app/main/default/objects/accounts/buttons/enableSupplier.button.js"
 module.exports = {
     enableSupplier: function (object_name, record_id, fields) {
         let text = 'When enabled, you can create vendor users for vendor associated contacts. Are you sure?';

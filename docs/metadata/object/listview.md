@@ -13,11 +13,24 @@ List views with the Visible only to me Restrict Visibility option are not access
 
 List views are stored as additional part of a CustomObject component. The component can represent a custom object or a standard object, such as an account.
 
+```sh
+my-app
+├── steedos-app/main/default
+├── ...
+│   └── objects
+│       └── accounts
+// highlight-start
+│           └── listviews
+│               └── mine.listView.yml
+// highlight-end
+├── ...
+```
+
 ## Declarative Metadata Sample Definition
 
-A sample XML definition of a list view in a custom object is shown below.
+A sample yml definition of a list view in a custom object is shown below.
 
-```yml
+```yml title="my-app/steedos-app/main/default/objects/accounts/listviews/mine.listView.yml"
 name: my_customers
 label: My Customers
 columns:

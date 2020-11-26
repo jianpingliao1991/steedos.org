@@ -34,6 +34,19 @@ MyExternalObject__x.MyCustomField__c
 
 Custom fields are user-defined fields and are additional part of the custom object or standard object definition. See [Object](summary) for more information. Standard fields are predefined on standard objects.
 
+```sh
+my-app
+├── steedos-app/main/default
+├── ...
+│   └── objects
+│       └── accounts
+// highlight-start
+│           └── fields
+│               └── rating.field.yml
+// highlight-end
+├── ...
+```
+
 ## Fields
 
 Unless otherwise noted, all fields are createable, filterable, and nillable.
@@ -375,7 +388,7 @@ Applies to `summary` type fields.
 
 ## Declarative Metadata Sample Definition
 
-```yml
+```yml title="my-app/steedos-app/main/default/objects/accounts/fields/rating.field.yml"
 name: rating
 label: Rating
 type: select
