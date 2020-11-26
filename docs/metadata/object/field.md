@@ -32,7 +32,9 @@ MyExternalObject__x.MyCustomField__c
 
 ## Declarative Metadata File Suffix and Directory Location
 
-Custom fields are user-defined fields and are additional part of the custom object or standard object definition. See [Object](summary) for more information. Standard fields are predefined on standard objects.
+Custom fields are user-defined fields, they are stored in the `fields` folder with the suffix `.field` as an additional part of the CustomObject component. The component can represent a custom object or a standard object, such as an account.
+
+See [Object](summary) for more information. Standard fields are predefined on standard objects.
 
 ```sh
 my-app

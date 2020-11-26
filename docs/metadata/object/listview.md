@@ -11,7 +11,7 @@ List views with the Visible only to me Restrict Visibility option are not access
 
 ## Declarative Metadata File Suffix and Directory Location
 
-List views are stored as additional part of a CustomObject component. The component can represent a custom object or a standard object, such as an account.
+ListViews components have the suffix `.listView` and are stored in the `listviews` folder as additional part of a CustomObject component. The component can represent a custom object or a standard object, such as an account.
 
 ```sh
 my-app

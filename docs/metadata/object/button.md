@@ -8,7 +8,9 @@ There are three built-in basic operations: add (standard_new), edit (standard_ed
 
 ## Declarative Metadata File Suffix and Directory Location
 
-Custom button are defined as additional part of a standard or custom object.
+Custom button components have the suffix `.button` and are stored in the `buttons` folder as additional part of a CustomObject component. The component can represent a custom object or a standard object, such as an account.
+
+You can define a custom button in the `*.button.yml` file and write a javascript script to perform the desired action in the `*.button.js` file
 
 ```sh
 my-app
