@@ -29,4 +29,7 @@ A sample yml definition of a permission set for the contract managers is shown b
 
 ```yml title="my-app/steedos-app/main/default/permissionsets/contract_manager.permissionset.yml"
 name: contract_manager
+label: Contract Managers
+license: platform
+description: A collection of privileges for a contract manager.
 ```
