@@ -12,6 +12,7 @@ The following field types are supported in Steedos.
 - [textarea](#textarea)
 - [date](#date)
 - [datetime](#datetime)
+- [select](complex#select)
 
 ## text
 
