@@ -54,7 +54,9 @@ my-app
 │               └── mine.listView.yml
 │               └── ...
 │           └── permissions
+│               └── admin.permission.yml
 │               └── contract_manager.permission.yml
+│               └── user.permission.yml
 │               └── ...
 │           └── accounts.object.yml
 │       └── ...
