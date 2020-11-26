@@ -9,6 +9,9 @@ module.exports = {
   organizationName: 'steedos', // Usually your GitHub org/user name.
   projectName: 'steedos.org', // Usually your repo name.
   themeConfig: {
+    baiduAnalytics: {
+      trackingID: '59b8a9f85c512f6023347313bb449e04',
+    },
     navbar: {
       title: 'Steedos',
       // style: 'dark',
