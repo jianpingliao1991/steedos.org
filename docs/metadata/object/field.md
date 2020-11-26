@@ -32,7 +32,7 @@ MyExternalObject__x.MyCustomField__c
 
 ## Declarative Metadata File Suffix and Directory Location
 
-Custom fields are user-defined fields and are part of the custom object or standard object definition. See [Object](summary) for more information. Standard fields are predefined on standard objects.
+Custom fields are user-defined fields and are additional part of the custom object or standard object definition. See [Object](summary) for more information. Standard fields are predefined on standard objects.
 
 ## Fields
 
