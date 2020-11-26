@@ -28,7 +28,7 @@ An example of a custom field on an external object:
 MyExternalObject__x.MyCustomField__c
 ```
 
-Steedos support a variety of field types, see [Field Types](url) for more information.
+<!-- Steedos support a variety of field types, see [Field Types](url) for more information. -->
 
 ## Declarative Metadata File Suffix and Directory Location
 
@@ -230,7 +230,7 @@ The field type is array.
 
 Applies to `select` type fields. If specified, this field enumerates the picklist values and labels.
 
-You can define options in a variety of formats, see [Select Field](url) for more information.
+<!-- You can define options in a variety of formats, see [Select Field](url) for more information. -->
 
 ```yml
 priority:
@@ -246,7 +246,7 @@ The field type is function.
 
 Applies to `select` type fields. If specified, this field provide a function that enumerates the picklist values and labels.
 
-The function returns an array in the following format, see [Select Field](url) for more information.
+<!-- The function returns an array in the following format, see [Select Field](url) for more information. -->
 
 ```js
 [{label: "Label A", value: "a", icon: "account"}]
@@ -281,9 +281,9 @@ Represents some filtering criteria to the options.
 
 Applies to `lookup` type fields. If specified, this field limits the selection by filtering criteria when enumerating selection list values and labels.
 
-See [Lookup Field](url) for more information.
+<!-- See [Lookup Field](url) for more information. -->
 
-For now, only [[" Priority ", "eq", "Normal "] filtering in simple format is supported, This will later be integrated to support [Common Filtering Conditions](url) in steedos.
+<!-- For now, only [[" Priority ", "eq", "Normal "] filtering in simple format is supported, This will later be integrated to support [Common Filtering Conditions](url) in steedos. -->
 
 Alternatively, you can use the standard [OData filtering criteria](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter) as an alternative.
 
@@ -295,7 +295,7 @@ Indicates which fields on the current object the options value depends on.
 
 Applies to `lookup` type fields. If specified, when a field on depend_on changes, the value and options of the current field will be recalculated.
 
-See [Lookup Field](url) for more information.
+<!-- See [Lookup Field](url) for more information. -->
 
 ### formula
 
@@ -305,7 +305,7 @@ If specified, represents a formula on the field.
 
 Applies to `formula`, `autonumber` type fields.
 
-See [Formula Field](url) or [Autonumber Field](url) for more information.
+<!-- See [Formula Field](url) or [Autonumber Field](url) for more information. -->
 
 ### data_type
 
@@ -317,7 +317,7 @@ Applies to `formula`, `summary` type fields.
 
 For now, the options are text, number, currency, boolean, date and datetime.
 
-See [Formula Field](url) or [Summary Field](url) for more information.
+<!-- See [Formula Field](url) or [Summary Field](url) for more information. -->
 
 ### formula_blank_value
 
@@ -329,7 +329,7 @@ The options are zeroes and blanks.
 
 Applies to `formula` type fields.
 
-See [Formula Field](url) for more information.
+<!-- See [Formula Field](url) for more information. -->
 
 ### summary_type
 
@@ -341,7 +341,7 @@ The options are COUNT, SUM, MIN and MAX.
 
 Applies to `summary` type fields.
 
-See [Summary Field](url) for more information.
+<!-- See [Summary Field](url) for more information. -->
 
 ### summary_object
 
@@ -351,7 +351,7 @@ Indicates which object to aggregate for summary.
 
 Applies to `summary` type fields.
 
-See [Summary Field](url) for more information.
+<!-- See [Summary Field](url) for more information. -->
 
 ### summary_field
 
@@ -361,7 +361,7 @@ Indicates which field on the aggregating object to aggregate for summary.
 
 Applies to `summary` type fields.
 
-See [Summary Field](url) for more information.
+<!-- See [Summary Field](url) for more information. -->
 
 ### summary_filters
 
@@ -371,7 +371,7 @@ If specified, represents the filters for the records of the aggregating object w
 
 Applies to `summary` type fields.
 
-See [Summary Field](url) for more information.
+<!-- See [Summary Field](url) for more information. -->
 
 ## Declarative Metadata Sample Definition
 

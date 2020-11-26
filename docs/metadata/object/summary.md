@@ -3,9 +3,13 @@ title: Object
 sidebar_label: Object
 ---
 
-Represents a custom object that stores data unique to your org or an external object that maps to data stored outside your org.This type extends the [Metadata](../metadata) metadata type and inherits its name field.
+Represents a custom object that stores data unique to your org or an external object that maps to data stored outside your org. 
 
-Specify all relevant fields when you create or update a custom object. You cannot update a single field on the object. For more information about custom objects, see [Administer Custom Objects](url) in Steedos Help.
+<!-- This type extends the [Metadata](../metadata) metadata type and inherits its name field. -->
+
+Specify all relevant fields when you create or update a custom object. You cannot update a single field on the object. 
+
+<!-- For more information about custom objects, see [Administer Custom Objects](url) in Steedos Help. -->
 
 You can also use this metadata type to work with customizations of standard objects, such as accounts.
 
