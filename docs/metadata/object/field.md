@@ -212,7 +212,7 @@ The field type is text.
 
 If specified, the field is a picklist, and this field is the code of a picklist record in the database which enumerates the picklist values and labels.
 
-Applies to select type fields. When the specified Picklist record exists, override the options attribute defined by the field.
+Applies to `select` type fields. When the specified Picklist record exists, override the options attribute defined by the field.
 
 The following example defines a country field that lists all the optional country items for drop-down selection.
 
@@ -228,9 +228,9 @@ country:
 
 The field type is array.
 
-Applies to select type fields. If specified, this field enumerates the picklist values and labels.
+Applies to `select` type fields. If specified, this field enumerates the picklist values and labels.
 
-You can define options in a variety of formats, see [select](url) for more information.
+You can define options in a variety of formats, see [Select Field](url) for more information.
 
 ```yml
 priority:
@@ -238,6 +238,18 @@ priority:
   label: Priority
   options: High:high,Normal:normal,Low:low
   defaultValue: normal
+```
+
+### optionsFunction
+
+The field type is function.
+
+Applies to `select` type fields. If specified, this field provide a function that enumerates the picklist values and labels.
+
+The function returns an array in the following format, see [Select Field](url) for more information.
+
+```js
+[{label: "Label A", value: "a", icon: "account"}]
 ```
 
 ### sort_no
@@ -259,7 +271,107 @@ The field type is text.
 
 Represents which object the field references to.
 
-Applies to lookup, master/detail type fields. If specified, this field will reference a specific object, and the field value will be the `_id` attribute of one or more referenced records.
+Applies to `lookup`, `master/detail` type fields. If specified, this field will reference a specific object, and the field value will be the `_id` attribute of one or more referenced records.
+
+### filters
+
+The field type is array or string.
+
+Represents some filtering criteria to the options.
+
+Applies to `lookup` type fields. If specified, this field limits the selection by filtering criteria when enumerating selection list values and labels.
+
+See [Lookup Field](url) for more information.
+
+For now, only [[" Priority ", "eq", "Normal "] filtering in simple format is supported, This will later be integrated to support [Common Filtering Conditions](url) in steedos.
+
+Alternatively, you can use the standard [OData filtering criteria](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter) as an alternative.
+
+### depend_on
+
+The field type is array.
+
+Indicates which fields on the current object the options value depends on.
+
+Applies to `lookup` type fields. If specified, when a field on depend_on changes, the value and options of the current field will be recalculated.
+
+See [Lookup Field](url) for more information.
+
+### formula
+
+The field type is text.
+
+If specified, represents a formula on the field.
+
+Applies to `formula`, `autonumber` type fields.
+
+See [Formula Field](url) or [Autonumber Field](url) for more information.
+
+### data_type
+
+The field type is text.
+
+If specified, represents the data type of value for the field.
+
+Applies to `formula`, `summary` type fields.
+
+For now, the options are text, number, currency, boolean, date and datetime.
+
+See [Formula Field](url) or [Summary Field](url) for more information.
+
+### formula_blank_value
+
+The field type is text.
+
+It means how to handle the blank value of a field in steedos.
+
+The options are zeroes and blanks.
+
+Applies to `formula` type fields.
+
+See [Formula Field](url) for more information.
+
+### summary_type
+
+The field type is text.
+
+Indicates the calculation type for summary.
+
+The options are COUNT, SUM, MIN and MAX.
+
+Applies to `summary` type fields.
+
+See [Summary Field](url) for more information.
+
+### summary_object
+
+The field type is text.
+
+Indicates which object to aggregate for summary.
+
+Applies to `summary` type fields.
+
+See [Summary Field](url) for more information.
+
+### summary_field
+
+The field type is text.
+
+Indicates which field on the aggregating object to aggregate for summary.
+
+Applies to `summary` type fields.
+
+See [Summary Field](url) for more information.
+
+### summary_filters
+
+The field type is array or string.
+
+If specified, represents the filters for the records of the aggregating object while aggregating.
+
+Applies to `summary` type fields.
+
+See [Summary Field](url) for more information.
 
 ## Declarative Metadata Sample Definition
 
