@@ -36,6 +36,8 @@ External object names are automatically appended with __x. The file suffix is .o
 
 Custom, standard, and external objects are stored in the objects folder in the corresponding package directory.
 
+You can define a object in the `*.object.yml` file and other additional part of the object component in the subfolders like `buttons`,`fields`,`listviews`,`permissions` etc.
+
 ```sh
 my-app
 ├── steedos-app/main/default
