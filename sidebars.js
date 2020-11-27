@@ -17,6 +17,8 @@ module.exports = {
       }, 
       "formula/best_practices", "formula/examples"
     ],
-    "Steedos API": []
+    "Steedos API": ['api', {
+      "GraphQL": ["api/graphql", "api/graphql_auth", "api/graphql_query", "api/graphql_add", "api/graphql_edit", "api/graphql_delete"]
+    }]
   },
 };
