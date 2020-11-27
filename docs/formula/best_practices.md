@@ -18,15 +18,15 @@ The formula can be used in many places of Huayan Rubik's cube. Before you start 
 
 Common formula process
 
-usage ｜ When will it be implemented? ｜Read only? ｜Can null processing be specified?
- :- | :-: | :-: | :-:
- **Approval process** ｜ Submit records and waiting for approvaling | Not applicable | no
- **Approval steps** | Submit records and waiting for approvaling | Not applicable | no
- **Field default value** | When creating a record | no | no
- **Formula field** | After the record is saved | yes | yes
- **Verify the rules** | Before the record is saved | Not applicable | no
- **Field update** | During workflow or approval process | Not applicable | no
- **Workflow rules** When records are kept | Not applicable | no
+usage | When will it be implemented? | Read only? | Null processing can be specified?
+:- | :-: | :-: | :-:
+**Approval Process** | Record submitted for approval | Not applicable | No
+**Approval Step** | Record submitted for approval | Not applicable | No
+**Field Default Value** | When creating a record | No | No
+**Formula Field** | After the record is saved | Yes | Yes
+**Validation Rules** | Before the record is saved | Not applicable | No
+**Field Update** | During workflow or approval process | Not applicable | No
+**Workflow Rule** | When records are kept | Not applicable | No
 
  ## Formula data type
 
