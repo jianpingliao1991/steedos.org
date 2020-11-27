@@ -16,17 +16,12 @@ module.exports = {
       title: 'Steedos',
       // style: 'dark',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Steedos',
         src: 'img/logo.png',
       },
-      items: [{
-        to: '/', label: 'Platform', position: 'left', activeBasePath: '/none'},
-        {
-          to: 'docs/overview',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
+      items: [
+        {to: 'docs/overview', label: 'Getting Started', position: 'left'},
+        {to: 'docs/metadata/metadata', label: 'Metadata API', position: 'left', activeBasePath: '/docs/metadata'},
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/steedos/steedos-platform',
