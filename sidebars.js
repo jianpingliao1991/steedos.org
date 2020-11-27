@@ -8,12 +8,12 @@ module.exports = {
       }, 
       'metadata/object/listview', 'metadata/object/button', 'metadata/object/permission', 'metadata/object/validation_rule', 'metadata/object/workflow_rule']
     },'metadata/application','metadata/report','metadata/permission_set'],
-    "Calculate Field Values With Formulas":[
+    "Calculate With Formulas":[
       "formula/summary",
       "formula/create", 
       "formula/summary_field",
       "formula/date",{
-        "Formula Operators and Functions": ["formula/functions", "formula/operator_math", "formula/operator_logical", "formula/operator_text", "formula/function_date", "formula/function_logical", "formula/function_math", "formula/function_text", "formula/function_advanced"],
+        "Formula API": ["formula/functions", "formula/operator_math", "formula/operator_logical", "formula/operator_text", "formula/function_date", "formula/function_logical", "formula/function_math", "formula/function_text", "formula/function_advanced"],
       }, 
       "formula/best_practices", "formula/examples"
     ],
