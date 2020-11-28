@@ -140,7 +140,7 @@ Get predictable results:
 
 ### Query data
 
-You can query records by GraphQL API with `filters`, `top`, `skip` and `sort`, see [Query data by GraphQL API](/docs/api/graphql_query) for more information.
+You can query records by GraphQL API with `filters`, `fields`, `top`, `skip` and `sort`, see [Query data by GraphQL API](/docs/api/graphql_query) for more information.
 
 There is an example following: request all leads with `status` attribute value of 'Qualified'.
 
