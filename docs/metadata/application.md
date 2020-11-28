@@ -25,7 +25,7 @@ my-app
 
 Here’s the definition of a sales app:
 
-```yml title="my-app/steedos-app/main/default/profiles/customer.profile.yml"
+```yml title="my-app/steedos-app/main/default/profiles/sales.app.yml"
 _id: sales
 name: Sales
 description: Manage the sales process through customers, prospects, business opportunities, etc
