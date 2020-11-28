@@ -144,7 +144,7 @@ Request all leads with `status` attribute value of 'Qualified'.
 
 ```sh
 {
-  leads(filters:[["status", "=" "Qualified"]]){
+  leads(filters:[["status", "=", "Qualified"]]){
     name,
     title,
     status
