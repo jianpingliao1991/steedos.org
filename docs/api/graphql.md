@@ -28,7 +28,7 @@ Here are some examples that you can run directly on the client console.
 Ask for all accounts:
 
 ```sh
-{
+query{
   accounts {
     name,
     industry,
@@ -38,10 +38,10 @@ Ask for all accounts:
 ```
 
 :::note Note
-You can also wrap the above query statement with a json node called `query` as follows, which will have the same effect and return the same request results.
+You can also omit the first word that called `query` as follows, which will have the same effect and return the same request results.
 
 ```sh
-query{
+{
   accounts {
     name,
     industry,
@@ -83,7 +83,7 @@ Get predictable results:
 Request all lead records, along with extended fields information belonging to the relevant objects:
 
 ```sh
-{
+query{
   leads{
     name,
     title,
@@ -145,7 +145,7 @@ You can query records by GraphQL API with `filters`, `fields`, `top`, `skip` and
 There is an example following: request all leads with `status` attribute value of 'Qualified'.
 
 ```sh
-{
+query{
   leads(filters:[["status", "=", "Qualified"]], top:1, sort:"name desc"){
     name,
     title,
