@@ -138,13 +138,15 @@ Get predictable results:
 }
 ```
 
-### Query with filters
+### Query data
 
-Request all leads with `status` attribute value of 'Qualified'.
+You can query records by GraphQL API with `filters`, `top`, `skip` and `sort`, see [Query data by GraphQL API](/docs/api/graphql_query) for more information.
+
+There is an example following: request all leads with `status` attribute value of 'Qualified'.
 
 ```sh
 {
-  leads(filters:[["status", "=", "Qualified"]]){
+  leads(filters:[["status", "=", "Qualified"]], top:1, sort:"name desc"){
     name,
     title,
     status
@@ -167,6 +169,8 @@ Get predictable results:
   }
 }
 ```
+
+
 
 :::note Note
 You can also replace the code `filters:[["status", "=" "Qualified"]]` with `filters:"status eq 'Qualified'"` which is a standard [OData filtering string](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter).
