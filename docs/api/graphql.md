@@ -80,63 +80,9 @@ Get predictable results:
 
 ### Infinitely extended query
 
-Request all lead records, along with extended fields information belonging to the relevant objects:
+You can extend the field indefinitely to query the relevant field value by define the field structure detail at the end of the object name and brackets.
 
-```sh
-query{
-  leads{
-    name,
-    title,
-    status,
-    converted_account {
-      name,
-      rating
-    },
-    converted_contact {
-      name,
-      account{
-        name
-      }
-    },
-    converted
-  }
-}
-```
-
-Get predictable results:
-
-```js
-{
-  "data": {
-    "leads": [
-      {
-        "name": "Lead A",
-        "title": "GM",
-        "status": "Qualified",
-        "converted_account": {
-          "name": "Account B",
-          "rating": "Hot"
-        },
-        "converted_contact": {
-          "name": "Contact M",
-          "account": {
-            "name": "Account N"
-          }
-        },
-        "converted": true
-      },
-      {
-        "name": "Lead B",
-        "title": "purchasing manager",
-        "status": "New",
-        "converted_account": null,
-        "converted_contact": null,
-        "converted": null
-      }
-    ]
-  }
-}
-```
+See [Query data by GraphQL API](/docs/api/graphql_query#field structure detail) for more information.
 
 ### Query data
 
@@ -169,8 +115,6 @@ Get predictable results:
   }
 }
 ```
-
-
 
 :::note Note
 You can also replace the code `filters:[["status", "=" "Qualified"]]` with `filters:"status eq 'Qualified'"` which is a standard [OData filtering string](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter).
