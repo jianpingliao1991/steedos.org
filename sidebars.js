@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     "Getting Started": ['overview', 'installation'],
-    "Metadata API": ['metadata/metadata', {
+    "Metadata": ['metadata/metadata', {
       "Object": ['metadata/object/summary', 'metadata/object/field', 
       {
         "Field Type": ["metadata/object/field_type/basic", "metadata/object/field_type/complex", "metadata/object/field_type/built_in"]

@@ -1,6 +1,6 @@
 ---
 title: Calculate Field Values With Formulas
-sidebar_label: Formulas
+sidebar_label: Overview
 ---
 
 A formula is an algorithm that derives its value from other fields, expressions, or values. Formulas help you automatically calculate the value of a field based on other fields.

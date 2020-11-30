@@ -1,5 +1,6 @@
 ---
 title: Metadata
+sidebar_label: Overview
 ---
 
 This is the base class for all metadata types. You cannot edit this object. A component is an instance of a metadata type.
