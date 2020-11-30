@@ -7,7 +7,7 @@ The business system developed by Steedos, complete API built in, can be easily i
 
 ## OData API
 
-OData(Open Data Protocol) is an OASIS open industry standard that describes how to create and access REST services.
+[OData(Open Data Protocol)](https://www.odata.org/) is an OASIS open industry standard that describes how to create and access REST services.
 
 In Steedos, standard business objects and custom business objects will automatically generate standard HTTP API interface, and developers can realize the query, modification and deletion of data under various conditions through standard OData syntax.
 
