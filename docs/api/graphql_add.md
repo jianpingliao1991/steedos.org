@@ -13,7 +13,7 @@ mutation {
 
 That represents you shoud replace the `tasks` above with the object name you want to insert record, and replace the `{name:"Task One"}` above with a JSON data you want to insert.
 
-The keyword `INSERT_ONE` in the above script represents to insert data into Steedos via the GraphQL API.
+The keyword `INSERT_ONE` in the above script represents to insert one record into Steedos via the GraphQL API.
 
 The graphql script above may return some data like this:
 
