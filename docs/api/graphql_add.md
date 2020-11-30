@@ -28,4 +28,4 @@ The graphql script above may return some data like this:
 }
 ```
 
-When somebody insert data via the GraphQL API on Steedos, they can insert data of the object only they have permission to insert data, see [About data permissions](/docs/api/graphql#about-data-permissions) for more information.
+When somebody insert data via the GraphQL API on Steedos, they can insert record of the object only they have permission to insert, see [About data permissions](/docs/api/graphql#about-data-permissions) for more information.
