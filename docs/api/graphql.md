@@ -82,6 +82,58 @@ Get predictable results:
 
 You can extend the field indefinitely to query the relevant field value by define the field structure detail at the end of the object name and brackets.
 
+The field structure detail is defined like bellow:
+
+```sh
+query{
+  object_name{
+    field1_name,
+    field2_name,
+    // highlight-start
+    field3_name {
+      field3_field1_name {
+        field3_field1_field1_name,
+        field3_field1_field2_name{
+          ...
+        }
+      },
+      field3_field2_name,
+      ...
+    }
+    // highlight-end
+    ...
+  }
+}
+```
+
+And it will return a data result like that:
+
+```js
+{
+  "data": {
+    "object_name": [
+      {
+        "field1_name": "field1_value",
+        "field2_name": "field2_value",
+        // highlight-start
+        "field3_name": {
+          "field3_field1_name": {
+            "field3_field1_field1_name": "field3_field1_field1_value",
+            "field3_field1_field2_name": {
+              ...
+            }
+          },
+          "field3_field2_name": "field3_field2_value"
+          ...
+        }
+        // highlight-end
+      },
+      ...
+    ]
+  }
+}
+```
+
 See [Query data by GraphQL API](/docs/api/graphql_query#field-structure-detail) for more information.
 
 ### Query data
