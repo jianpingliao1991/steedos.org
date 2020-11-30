@@ -9,7 +9,7 @@ Using the GraphQL API, you can ask for what you need and get exactly that. see [
 
 ## About data permissions
 
-Steedos supports many kinds of permissions configuration, such as [Permission Set](/docs/metadata/permission_set), [Profile](/docs/metadata/profile), [Permission](/docs/metadata/object/permission) etc. You can use them to implement different permissions for different people to have access to different objects and fields, and what data can be returned by the GraphQL API is controlled by these permission configurations.
+Steedos supports many kinds of permissions configuration, such as [Permission Set](/docs/metadata/permission_set), [Profile](/docs/metadata/profile), [Permission](/docs/metadata/object/permission) etc. You can use them to implement different permissions for different people to have access to different objects and fields, and what data can be returned, inserted, edited, deleted by the GraphQL API is controlled by these permission configurations.
 
 To support permissions control, you should pass in a `token` or `userSession` on request that identifies the current user, see [Authorize the GraphQL API](/docs/api/graphql_auth) for more information.
 
