@@ -17,6 +17,8 @@ They are enclosed in brackets after the object name like the following.
 leads(filters:[["status", "=", "Qualified"]], top:1, sort:"name desc")
 ```
 
+When somebody access the GraphQL API on Steedos, they can see only the data they have permission to see, see [About data permissions](/docs/api/graphql#about-data-permissions) for more information.
+
 ## filters
 
 You can add the query filters after the object name, the filters expression may be an array as a `Steedos Filters` like `[["status", "=", "Qualified"]]` or a text as a standard [OData filtering string](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter) like `"status eq 'Qualified'"`.
