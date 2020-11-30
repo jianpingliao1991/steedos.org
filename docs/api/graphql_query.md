@@ -3,7 +3,7 @@ title: Query data by GraphQL API
 sidebar_label: Query by GraphQL
 ---
 
-Query data in graphQL API, query criteria accept 5 parameters bellow, can be used together as needed.
+Query data in GraphQL API, query criteria accept 5 parameters bellow, can be used together as needed.
 
 - filters: text or array
 - fields: array
