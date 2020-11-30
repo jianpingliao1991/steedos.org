@@ -13,7 +13,7 @@ Steedos supports many kinds of permissions configuration, such as [Permission Se
 
 To support permissions control, you should pass in a `token` or `userSession` on request that identifies the current user, see [Authorize the GraphQL API](/docs/api/graphql_auth) for more information.
 
-You can user the GraphQL API to [Query](/docs/api/graphql_query), [Insert](/docs/api/graphql_add), [Edit](/docs/api/graphql_edit), [Delete](/docs/api/graphql_delete) the data that you have permissions to.
+You can user the GraphQL API to [Query](/docs/api/graphql_query), [Insert](/docs/api/graphql_add), [Edit](/docs/api/graphql_edit) and [Delete](/docs/api/graphql_delete) the data that you have permissions to.
 
 ## Access to the address of GraphQL client console
 
@@ -82,7 +82,7 @@ Get predictable results:
 
 You can extend the field indefinitely to query the relevant field value by define the field structure detail at the end of the object name and brackets.
 
-See [Query data by GraphQL API](/docs/api/graphql_query#field structure detail) for more information.
+See [Query data by GraphQL API](/docs/api/graphql_query#field-structure-detail) for more information.
 
 ### Query data
 
