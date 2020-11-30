@@ -233,7 +233,7 @@ class Footer extends React.Component {
               >
                 <div class='px-3 py-2'>
                   <a
-                    href='/cn'
+                    href='https://www.steedos.com/cn/'
                     class='text-base text-gray-500 hover:text-gray-900'
                   >
                     中文
@@ -241,7 +241,7 @@ class Footer extends React.Component {
                 </div>
                 <div class='px-3 py-2'>
                   <a
-                    href='/us'
+                    href='https://www.steedos.org/'
                     class='text-base text-gray-500 hover:text-gray-900'
                   >
                     English
