@@ -13,7 +13,7 @@ Query data in graphQL API, query criteria accept 5 parameters bellow, can be use
 
 They are enclosed in brackets after the object name like the following.
 
-```sh
+```graphql
 leads(filters:[["status", "=", "Qualified"]], top:1, sort:"name desc")
 ```
 
@@ -21,7 +21,7 @@ leads(filters:[["status", "=", "Qualified"]], top:1, sort:"name desc")
 
 You can add the query filters after the object name, the filters expression may be an array as a `Steedos Filters` like `[["status", "=", "Qualified"]]` or a text as a standard [OData filtering string](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter) like `"status eq 'Qualified'"`.
 
-```sh
+```graphql
 query{
   leads(filters:[["status", "=", "Qualified"]]){
     name,
@@ -33,7 +33,7 @@ query{
 
 or
 
-```sh
+```graphql
 query{
   leads(filters:"status eq 'Qualified'"){
     name,
@@ -49,7 +49,7 @@ You can add the query fields after the object name, that represents the which fi
 
 This property is always omitted, because you must define the field structure detail at the end of the object name and brackets.
 
-```sh
+```graphql
 query{
   leads(fields:["name"]){
     name,
@@ -60,7 +60,7 @@ query{
 
 The results is like bellow:
 
-```js
+```json
 {
   "data": {
     "leads": [
@@ -87,7 +87,7 @@ You can define how many records you want to skip with a `skip` word, and how man
 
 The query bellow will only return the second record.
 
-```sh
+```graphql
 query{
   leads(fields:["name"], top:1, skip:1){
     name,
@@ -104,7 +104,7 @@ A key word named 'desc' represents descending order, and a key word named ‘asc
 
 The query bellow will sort in descending order by field `name` to return the results.
 
-```sh
+```graphql
 query{
   leads(fields:["name"], sort:"name desc"){
     name,
@@ -121,12 +121,13 @@ Thanks to this feature, you can extend the field indefinitely to query the relev
 
 Request all lead records, along with extended fields information belonging to the relevant objects:
 
-```sh
+```graphql
 query{
   leads{
     name,
     title,
     status,
+    // highlight-start
     converted_account {
       name,
       rating
@@ -137,6 +138,7 @@ query{
         name
       }
     },
+    // highlight-end
     converted
   }
 }
@@ -144,7 +146,7 @@ query{
 
 Get predictable results:
 
-```js
+```json
 {
   "data": {
     "leads": [
@@ -152,6 +154,7 @@ Get predictable results:
         "name": "Lead A",
         "title": "GM",
         "status": "Qualified",
+        // highlight-start
         "converted_account": {
           "name": "Account B",
           "rating": "Hot"
@@ -162,6 +165,7 @@ Get predictable results:
             "name": "Account N"
           }
         },
+        // highlight-end
         "converted": true
       },
       {
