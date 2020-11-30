@@ -15,7 +15,7 @@ That represents you shoud replace the `tasks` above with the object name you wan
 
 The graphql script above may return some data like this:
 
-```graphql
+```json
 {
   "data": {
     "tasks_INSERT_ONE": {
