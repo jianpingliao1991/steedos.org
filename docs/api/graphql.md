@@ -19,7 +19,7 @@ You can user the GraphQL API to [Query](/docs/api/graphql_query), [Insert](/docs
 
 Suppose you have start a local service of Steedos with the port of 3000, then you can access the GraphQL client console with `http://localhost:3000/graphql`.
 
-In the GraphQL client console, you can input the query in the left panel, and run it by clicking the run button on the top of the page.
+In the GraphQL client console, you can input the GraphQL script in the left panel, and run it by clicking the run button on the top of the page.
 
 Here are some examples that you can run directly on the client console.
 
