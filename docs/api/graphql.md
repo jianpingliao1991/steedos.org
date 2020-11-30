@@ -27,7 +27,7 @@ Here are some examples that you can run directly on the client console.
 
 Ask for all accounts:
 
-```sh
+```graphql
 query{
   accounts {
     name,
@@ -40,7 +40,7 @@ query{
 :::note Note
 You can also omit the first word that called `query` as follows, which will have the same effect and return the same request results.
 
-```sh
+```graphql
 {
   accounts {
     name,
@@ -54,7 +54,7 @@ You can also omit the first word that called `query` as follows, which will have
 
 Get predictable results:
 
-```js
+```json
 {
   "data": {
     "accounts": [
@@ -84,7 +84,7 @@ You can extend the field indefinitely to query the relevant field value by defin
 
 The field structure detail is defined like bellow:
 
-```sh
+```graphql
 query{
   object_name{
     field1_name,
@@ -108,7 +108,7 @@ query{
 
 And it will return a data result like that:
 
-```js
+```json
 {
   "data": {
     "object_name": [
@@ -142,7 +142,7 @@ You can query records by GraphQL API with `filters`, `fields`, `top`, `skip` and
 
 There is an example following: request all leads with `status` attribute value of 'Qualified'.
 
-```sh
+```graphql
 query{
   leads(filters:[["status", "=", "Qualified"]], top:1, sort:"name desc"){
     name,
@@ -154,7 +154,7 @@ query{
 
 Get predictable results:
 
-```js
+```json
 {
   "data": {
     "leads": [
