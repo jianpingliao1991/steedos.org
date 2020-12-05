@@ -32,6 +32,12 @@ class Footer extends React.Component {
     </div> */}
             <div className='grid grid-cols-1 gap-2 mt-3'>
               <a
+                href='https://join.slack.com/t/steedos/shared_invite/zt-jq7eupr9-cgKrUOyWb1zymniRzhH4jg'
+                target='_blank'
+              >
+                Join me on Slack — it’s a faster, simpler way to work.
+              </a>
+              {/* <a
                 href='https://stackoverflow.com/questions/tagged/steedos'
                 target='_blank'
               >
@@ -42,7 +48,7 @@ class Footer extends React.Component {
               </a>
               <a href='https://twitter.com/steedos' target='_blank'>
                 Twitter
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -103,6 +109,22 @@ class Footer extends React.Component {
                           className='text-base leading-6 text-gray-500 hover:text-gray-900'
                         >
                           Object
+                        </a>
+                      </li>
+                      <li className='mt-4'>
+                        <a
+                          href='/docs/metadata/object/field'
+                          className='text-base leading-6 text-gray-500 hover:text-gray-900'
+                        >
+                          Field
+                        </a>
+                      </li>
+                      <li className='mt-4'>
+                        <a
+                          href='/docs/metadata/object/listview'
+                          className='text-base leading-6 text-gray-500 hover:text-gray-900'
+                        >
+                          ListView
                         </a>
                       </li>
                       <li className='mt-4'>

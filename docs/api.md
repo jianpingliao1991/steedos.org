@@ -17,7 +17,7 @@ In Steedos, standard business objects and custom business objects will automatic
 
 Steedos automatically generates the standard GraphQL interface for standard business objects or your defined custom business objects, which can quickly realize the query, modification and deletion of data under various conditions.
 
-see [GraphQL API](/docs/api/graphql) for more information.
+See [GraphQL API](/docs/api/graphql) for more information.
 
 ## About data permissions
 
