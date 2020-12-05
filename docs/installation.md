@@ -46,8 +46,8 @@ my-app
 │           │   └── description.field.yml
 │           │   └── isDone.field.yml
 │           ├── listviews
-│           │   └── all.listView.yml
-│           │   └── recent.listView.yml
+│           │   └── all.listview.yml
+│           │   └── recent.listview.yml
 │           ├── permissions
 │           │   └── user.permission.yml
 │           │   └── admin.permission.yml
