@@ -1,6 +1,6 @@
 ---
 title: The summary of GraphQL
-sidebar_label: GraphQL
+sidebar_label: Overview
 ---
 
 When you configure objects in Steedos, the [GraphQL](https://graphql.org/) API is automatically generated for you.
