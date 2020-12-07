@@ -21,7 +21,9 @@ module.exports = {
       },
       items: [
         {to: 'docs/overview', label: 'Getting Started', position: 'left'},
-        {to: 'docs/metadata/metadata', label: 'Metadata API', position: 'left', activeBasePath: '/docs/metadata'},
+        {to: 'docs/metadata/metadata', label: 'Metadata', position: 'left', activeBasePath: '/docs/metadata'},
+        {to: 'docs/formula/summary', label: 'Calculate With Formulas', position: 'left', activeBasePath: '/docs/formula'},
+        {to: 'docs/api', label: 'Steedos API', position: 'left'},
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/steedos/steedos-platform',
