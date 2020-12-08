@@ -2,26 +2,26 @@
 title: Roll-Up Summary Field
 ---
 
-The cumulative summary field automatically calculates the value in the related record. You can create a cumulative summary field so that its value is based on the summary of the field value of a sub-table in the main table/sub-table relationship, and display the summary result in the main record. The sub-table record must be directly related to the main record through the main table/sub-table. For example, you want to display the total invoice amount of all related invoice custom object records in the customer's invoice related list. You can define this summary information in a custom amount field called "Total Invoice Amount".
+The Roll-Up summary field automatically calculates the value in the related record. You can create a Roll-Up summary field so that its value is based on the summary of the field value of a sub-table in the main table/sub-table relationship, and display the summary result in the main record. The sub-table record must be directly related to the main record through the main table/sub-table. For example, you want to display the total invoice amount of all related invoice custom object records in the customer's invoice related list. You can define this summary information in a custom amount field called "Total Invoice Amount".
 
-You can use cumulative summary fields to perform different types of summary calculations. For example, you can calculate the number of sub-records related to the main record, and you can also calculate the sum, minimum, or maximum of the fields in the sub-records.
+You can use Roll-Up summary fields to perform different types of summary calculations. For example, you can calculate the number of sub-records related to the main record, and you can also calculate the sum, minimum, or maximum of the fields in the sub-records.
 
 ![Summary field](/assets/formula/summary.png)
 
-## Create cumulative summary field
+## Create Roll-Up summary field
 
-Define the cumulative summary field on the object (located on the main side of the main table/sub-table).
+Define the Roll-Up summary field on the object (located on the main side of the main table/sub-table).
 
 If the relationship does not already exist, first create a main table/sub-table relationship between the main object and the sub-object on the sub-table side to indicate the relationship between the value of the record being summarized and the record being summarized.
 
-Create a new field on the object where you want to display the value of the cumulative summary field. The summary field summarizes the values in the records on the related object, so the object (the field you created above) should be on the main side of the main table/child table relationship. <!-- For instructions on creating custom fields, please refer to[Create custom fields](url). -->
+Create a new field on the object where you want to display the value of the Roll-Up summary field. The summary field summarizes the values in the records on the related object, so the object (the field you created above) should be on the main side of the main table/child table relationship. <!-- For instructions on creating custom fields, please refer to[Create custom fields](url). -->
 
 ![Edit object field](/assets/formula/object.png)
 
 - **Belonging to：**That is, the main object in the main table/sub-table relationship.
 - **Name to display：**The name you want this summary field to display.
 - **Field name：**The unique api name of this field.
-- **Field type:** Please select "Cumulative Summary".
+- **Field type:** Please select "Roll-Up Summary".
 - **Default value：**Because the field value is calculated, the default value is invalid here.
 - **Field grouping：**Which group do you want the field to be displayed on.
 - **Precision：**The precision of the numeric field.
@@ -65,10 +65,10 @@ The low code of Huayan Cube supports richer filter condition settings, such as f
 
 ## Batch recalculate summary value
 
-For existing historical data, the cumulative summary field value will not be recalculated in many cases. In this case, you should select the "Batch recalculation summary value" button on the background detailed configuration page of the cumulative summary field to manually recalculate the value. These situations include but are not limited to the following situations:
+For existing historical data, the Roll-Up summary field value will not be recalculated in many cases. In this case, you should select the "Batch recalculation summary value" button on the background detailed configuration page of the Roll-Up summary field to manually recalculate the value. These situations include but are not limited to the following situations:
 
-- Change the cumulative summary definition (such as objects, fields to be aggregated, summary types, filter conditions, etc.).
-- Change the related attributes of the referenced field in the cumulative summary field "fields to be aggregated", such as changing its field type, changing the expression of its formula field, etc.
+- Change the Roll-Up summary definition (such as objects, fields to be aggregated, summary types, filter conditions, etc.).
+- Change the related attributes of the referenced field in the Roll-Up summary field "fields to be aggregated", such as changing its field type, changing the expression of its formula field, etc.
 
 :::note prompt
 
@@ -78,27 +78,27 @@ In a formal environment, please be careful to modify certain field properties of
 
 ## Implementation tips
 
-- Cumulative summary fields can be created on all primary side objects with primary / sub table relationships, regardless of whether the objects on both sides are standard or custom objects.
-- When a cumulative summary field cannot be created on an object, first create a master / child table relationship on the child tables of the object.
-- The types of fields that can be calculated in a cumulative summary field depend on the type of summary and the field type of the field to aggregate. For example:
+- Roll-Up summary fields can be created on all primary side objects with primary / sub table relationships, regardless of whether the objects on both sides are standard or custom objects.
+- When a Roll-Up summary field cannot be created on an object, first create a master / child table relationship on the child tables of the object.
+- The types of fields that can be calculated in a Roll-Up summary field depend on the type of summary and the field type of the field to aggregate. For example:
   - When sum is selected as the accumulation type, the number, amount, and percentage fields are available.
   - When min or max is selected as the accumulation type, the number, amount, percentage, date, and date time fields are available.
-  - When count is selected as the cumulative type, the total number of records in the sub table will be summarized directly, which is independent of the fields of the sub table. There is no need to select "fields to aggregate".
-- Sometimes, you cannot change the field type of the field you refer to in the cumulative summary field. This is because the field type that can be calculated in the cumulative summary field depends on the field type of the field to be aggregated. Huayan Rubik's cube has not handled such logic verification for the time being. Please change the field type in the formal environment carefully and arbitrarily.
-- After the cumulative summary field is created on the object, the field type of the main table / sub table type field in the sub table object on which the summary field depends cannot be changed to the related table or other field types. Huayan Rubik's cube has not handled such logic verification for the time being. Please change the field type in the formal environment carefully and arbitrarily.
-- The cumulative summary field can refer to the formula field, that is, "field to aggregate" can select the field of formula field type. When the formula value changes, the cumulative summary field will be triggered to summarize and calculate again and update the field value.
-- Cumulative summary field can also be referenced in formula field. When the value of cumulative summary field changes, it will trigger relevant formula field to recalculate its field value.
+  - When count is selected as the Roll-Up type, the total number of records in the sub table will be summarized directly, which is independent of the fields of the sub table. There is no need to select "fields to aggregate".
+- Sometimes, you cannot change the field type of the field you refer to in the Roll-Up summary field. This is because the field type that can be calculated in the Roll-Up summary field depends on the field type of the field to be aggregated. Huayan Rubik's cube has not handled such logic verification for the time being. Please change the field type in the formal environment carefully and arbitrarily.
+- After the Roll-Up summary field is created on the object, the field type of the main table / sub table type field in the sub table object on which the summary field depends cannot be changed to the related table or other field types. Huayan Rubik's cube has not handled such logic verification for the time being. Please change the field type in the formal environment carefully and arbitrarily.
+- The Roll-Up summary field can refer to the formula field, that is, "field to aggregate" can select the field of formula field type. When the formula value changes, the Roll-Up summary field will be triggered to summarize and calculate again and update the field value.
+- Roll-Up summary field can also be referenced in formula field. When the value of Roll-Up summary field changes, it will trigger relevant formula field to recalculate its field value.
 - For now, cross object field references or functions (such as now or In today's formula field, Huayan Rubik's cube is treated in the way of ordinary formula, and is not treated differently. However, you should not configure it in this way. This is not only that there should not be such logic in actual demand, but also because this configuration will bring great loss in performance.
-- Currently, formula calculations in workflow rules, validation rules, or other automatic rules that reference the summary field will not be triggered again when the cumulative summary field value changes.
+- Currently, formula calculations in workflow rules, validation rules, or other automatic rules that reference the summary field will not be triggered again when the Roll-Up summary field value changes.
 - In the formal environment, please be careful to modify some field properties of the object, such as field type, field formula expression, because field value recalculation may not be triggered again for existing historical record data. Please refer to [Batch recalculation summary value](#batch-recalculate-summary-value) for details.
-- Depending on the number of records affected and other factors, it may take 30 minutes or less to calculate the cumulative summary field value.
-- If the cumulative summary field is referenced in the validation rule, the validation rule will not be triggered when the summary field value changes. For example, the master record has a validation rule, and the cumulative summary field value must be less than 100. If the user will input more than 100 values to change the related sub record, the user is expected to be unable to save the sub table record. In fact, when the sub record changes, the verification rule of the master record will not be triggered. To achieve this requirement, the usual way is to configure the validation rule in the sub table instead of the main table, similar to: `lookup_mater_object_field.summary_value + current_value >= 100。`
+- Depending on the number of records affected and other factors, it may take 30 minutes or less to calculate the Roll-Up summary field value.
+- If the Roll-Up summary field is referenced in the validation rule, the validation rule will not be triggered when the summary field value changes. For example, the master record has a validation rule, and the Roll-Up summary field value must be less than 100. If the user will input more than 100 values to change the related sub record, the user is expected to be unable to save the sub table record. In fact, when the sub record changes, the verification rule of the master record will not be triggered. To achieve this requirement, the usual way is to configure the validation rule in the sub table instead of the main table, similar to: `lookup_mater_object_field.summary_value + current_value >= 100。`
 
 ## Best practices
 
-- If you do not want users to see the calculated value of the cumulative summary field, you can set the field as a hidden field. The fields on the detailed record that cannot be seen by the user are still calculated in the cumulative summary field.
-- If you have validation rules, consider how they affect the cumulative summary field. When the value in the sub table record changes, the value of the cumulative summary field of the main table record will also change. Therefore, a verification error will be displayed when saving the main table / sub table record. Please refer to the last item of [Implementation tips](#implementation-tips)
-- Please note that there is a difference between referring to the main table cumulative summary field from the sub table field and referring to its own cumulative summary field from the main table field. Cumulative summary fields referenced from child records may have obsolete values because the parent record was not updated when the child record was saved. However, if the cumulative summary field is referenced from the parent record, although the cumulative summary field will always have the latest update value, the verification rule of the master record will not be triggered when the child record is changed. Please refer to the last item of [Implementation tips](#implementation-tips)
-- Before creating a cumulative summary field, plan its implementation. Once created, you cannot change the selected detail object or delete any fields referenced in the cumulative summary definition.
-- Before you create the cumulative total value, please implement the plan in batch. Especially in the production environment, once the valuable historical data is generated and some field attributes of the object are modified, such as field type, field formula expression, it is necessary to manually execute [Batch recalculation of aggregate value](#batch-recalculate-summary-value) to correct the historical data, which will increase the risk of non confirmation.
-- Auto derived fields, such as current date or current user, are not allowed in cumulative summary fields. Disallows formula fields that contain functions that dynamically derive values, such as (DATEVALUE、NOW and TODAY). The cumulative summary field is also not allowed to contain formula fields of related object consolidation fields.
+- If you do not want users to see the calculated value of the Roll-Up summary field, you can set the field as a hidden field. The fields on the detailed record that cannot be seen by the user are still calculated in the Roll-Up summary field.
+- If you have validation rules, consider how they affect the Roll-Up summary field. When the value in the sub table record changes, the value of the Roll-Up summary field of the main table record will also change. Therefore, a verification error will be displayed when saving the main table / sub table record. Please refer to the last item of [Implementation tips](#implementation-tips)
+- Please note that there is a difference between referring to the main table Roll-Up summary field from the sub table field and referring to its own Roll-Up summary field from the main table field. Roll-Up summary fields referenced from child records may have obsolete values because the parent record was not updated when the child record was saved. However, if the Roll-Up summary field is referenced from the parent record, although the Roll-Up summary field will always have the latest update value, the verification rule of the master record will not be triggered when the child record is changed. Please refer to the last item of [Implementation tips](#implementation-tips)
+- Before creating a Roll-Up summary field, plan its implementation. Once created, you cannot change the selected detail object or delete any fields referenced in the Roll-Up summary definition.
+- Before you create the Roll-Up total value, please implement the plan in batch. Especially in the production environment, once the valuable historical data is generated and some field attributes of the object are modified, such as field type, field formula expression, it is necessary to manually execute [Batch recalculation of aggregate value](#batch-recalculate-summary-value) to correct the historical data, which will increase the risk of non confirmation.
+- Auto derived fields, such as current date or current user, are not allowed in Roll-Up summary fields. Disallows formula fields that contain functions that dynamically derive values, such as (DATEVALUE、NOW and TODAY). The Roll-Up summary field is also not allowed to contain formula fields of related object consolidation fields.
