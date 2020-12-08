@@ -12,10 +12,12 @@ module.exports = {
       "formula/summary",
       "formula/create", 
       "formula/summary_field",
-      "formula/date",{
-        "Formula API": ["formula/functions", "formula/operator_math", "formula/operator_logical", "formula/operator_text", "formula/function_date", "formula/function_logical", "formula/function_math", "formula/function_text", "formula/function_advanced"],
-      }, 
-      "formula/best_practices", "formula/examples"
+      "formula/date",
+      // {
+      //   "Formula API": ["formula/functions", "formula/operator_math", "formula/operator_logical", "formula/operator_text", "formula/function_date", "formula/function_logical", "formula/function_math", "formula/function_text", "formula/function_advanced"],
+      // }, 
+      "formula/best_practices", 
+      // "formula/examples"
     ],
     "Steedos API": ['api', {
       "GraphQL": ["api/graphql", "api/graphql_auth", "api/graphql_query", "api/graphql_add", "api/graphql_edit", "api/graphql_delete"]

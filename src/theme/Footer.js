@@ -208,14 +208,14 @@ class Footer extends React.Component {
                           Formula Best Practices
                         </a>
                       </li>
-                      <li className='mt-4'>
+                      {/* <li className='mt-4'>
                         <a
                           href='/docs/formula/examples'
                           className='text-base leading-6 text-gray-500 hover:text-gray-900'
                         >
                           Examples
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                   <div className='mt-12 md:mt-0'>
