@@ -28,10 +28,10 @@ Create a new field on the object where you want to display the value of the cumu
 - **Decimal places：**The number of decimal places that you want this summary result to retain.
 - **Object to be summarized：**Select the object on the sub-table in the main table/sub-table relationship, which contains the records you want to summarize.
 - **Summary type：**
-  ***COUNT：**Summarize the total number of records in the sub-table, and return the total number of records.
-  - **SUM：**Accumulate and summarize the values of the fields selected in the "Fields to Aggregate" option. Only number, amount, and percentage field types are available.
-  - **MIN：**Compare the values of the fields selected in the "Fields to Aggregate" option and get the minimum value. Only number, amount, percentage, date and datetime fields are available.
-  - **MAX：**Compare the values of the fields selected in the "Fields to Aggregate" option and get the maximum value. Only number, amount, percentage, date and datetime fields are available.
+  - ■ ***COUNT：*** Summarize the total number of records in the sub-table, and return the total number of records.
+  - ■ ***SUM：***Accumulate and summarize the values of the fields selected in the "Fields to Aggregate" option. Only number, amount, and percentage field types are available.
+  - ■ ***MIN：***Compare the values of the fields selected in the "Fields to Aggregate" option and get the minimum value. Only number, amount, percentage, date and datetime fields are available.
+  - ■ ***MAX：***Compare the values of the fields selected in the "Fields to Aggregate" option and get the maximum value. Only number, amount, percentage, date and datetime fields are available.
 - **Field to be aggregated：**Please select a field on the sub-table. This field is the field to be aggregated for SUM/MIN/MAX. For other summary types except COUNT, this item is required, otherwise, this field is not required.
 - **Filter criteria:** If you want to include only a specific record group in the summary calculation, please enter the filter criteria in the filter criteria, for example, only summarize the records created before 8 AM on January 1, 2021.
 - **Others:** Check the function switches that need to be enabled, and click Save to end the operation.
