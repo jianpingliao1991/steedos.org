@@ -78,8 +78,8 @@ In a formal environment, please be careful to modify certain field properties of
 
 ## Implementation tips
 
-- Roll-Up summary fields can be created on all primary side objects with primary / detail object relationships, regardless of whether the objects on both sides are standard or custom objects.
-- When a Roll-Up summary field cannot be created on an object, first create a master / child table relationship on the child tables of the object.
+- Roll-Up summary fields can be created on all master side objects with `Master Detail` object relationships, regardless of whether the objects on both sides are standard or custom objects.
+- When a Roll-Up summary field cannot be created on an object, you should first create a `Master Detail` relationship on the detail side of the object.
 - The types of fields that can be calculated in a Roll-Up summary field depend on the type of summary and the field type of the field to aggregate. For example:
   - When sum is selected as the accumulation type, the number, amount, and percentage fields are available.
   - When min or max is selected as the accumulation type, the number, amount, percentage, date, and date time fields are available.
