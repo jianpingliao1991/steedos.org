@@ -19,7 +19,7 @@ Throughout the example, variable dates and datetimes are used in place of actual
 
 - The TIMENOW() function returns the value of GMT and represents the current time without a date. If you need the current hour, minute, second, or millisecond, use this function instead of the NOW() function. This value is useful for tracking time(such as shift or elapsed time)
 
-For more information about how to convert between date and datetime values,please refer to [convert between date time and date](#convert-between-date-time-and-date)
+For more information about how to convert between date and datetime values,please refer to [Convert between date time and date](#convert-between-date-time-and-date)
 
 ## The DATE（）function
 
@@ -37,7 +37,7 @@ You can use the `DATETIMEVALUE( TEXT(date) )` function to convert a date value t
 
 ## Convert between date time and time
 
-The time data type value returned by function TIMEVALUE() is converted between date time and time. The format of the value is `“HH:MM:SS.MS”(hours:minutes:seconds.milliseconds)` value in 24-hour format and functions H/M/S/MS, HOUR(), MINUTE(),SECOND() and MILLISECOND() are valid parameters of TIMEVALUE().
+The time data type value returned by function TIMEVALUE() is converted between date time and time. The format of the value is `"HH:MM:SS.MS"(hours:minutes:seconds.milliseconds)` value in 24-hour format and functions H/M/S/MS, HOUR(), MINUTE(),SECOND() and MILLISECOND() are valid parameters of TIMEVALUE().
 
 Use the TIMEVALUE(text) function to convert a text value, text type merge field or expression to a time type. For example, use `TIMEVALUE(LPAD(TEXT(HOUR(ClosedDate)), 2, "0") & ":" & LPAD(TEXT(MINUTE(ClosedDate)), 2, "0") & ":" & LPAD(TEXT(SECOND(ClosedDate)), 2, "0") & "." & LPAD(TEXT(MILLISECOND(ClosedDate)), 3, "0"))` to extract the time from the ClosedDate datetime value.
 
@@ -57,7 +57,7 @@ You can also convert text to dates to use string values with your other date fie
 You can use the TEXT() function to include a date time value in a string, but be careful with the time zone. For example, consider this formula:
 `"The current date and time is " & TEXT( NOW() )`
 
-In this formula, NOW() is offset to GMT. Normally, NOW() will be converted to the user's time zone at view time, but because it is converted to text, the conversion does not occur. Therefore, if you execute this formula at 6:00 p.m. Beijing time (GMT-10) on August 1, the result is “The current date and time is 2021-08-01 10:00:00Z”.
+In this formula, NOW() is offset to GMT. Normally, NOW() will be converted to the user's time zone at view time, but because it is converted to text, the conversion does not occur. Therefore, if you execute this formula at 6:00 p.m. Beijing time (GMT-10) on August 1, the result is "The current date and time is 2021-08-01 10:00:00Z".
 
 When the date time is converted to text, a "Z" is included at the end to represent GMT. If the field is empty, TEXT (date / time) will report an error. Therefore, if the datetime value you are using may be empty, check before converting to text:
 
@@ -71,7 +71,7 @@ IF(
 
 To convert a string to a datetime value, use DATETIMEVALUE() to transfer the string in "YYYY-MM-DD HH:MM:SS"format. This method returns the date time value of GMT.
 
-## Convert between date time and text
+## Convert between time and text
 
 If you want to include time as part of a string, encapsulate the time value in the TEXT() function to convert it to text. For example, if you want to return the current time as text, use:
 `"The time is " & TEXT( TIMENOW() )`
