@@ -7,7 +7,7 @@ The name date to display uses two data types: date and datetime. Data type time 
 
 You can use add and subtract operators on dates, datetimes, and time values to calculate future dates or past times between two dates or times. For example, if you subtract one date from another, the resulting value will be the difference (days) between the two initial values (numeric data type). The same operation between two datetime values returns a decimal value, representing the difference in days, hours, and minutes. The same operation of two time values returns milliseconds.
 
-For example, if the difference between two date time values is 5.52, this means that the two values are separated by 5 days, 12 hours (0.5 of a day), and 28 minutes (0.02 of a day). You can also add numeric values to the date and date time. For example, the action `TODAY() + 3` returns three days after today's date. For details and examples of using dates, please refer to [sample date formula](url)
+For example, if the difference between two date time values is 5.52, this means that the two values are separated by 5 days, 12 hours (0.5 of a day), and 28 minutes (0.02 of a day). You can also add numeric values to the date and date time. For example, the action `TODAY() + 3` returns three days after today's date. <!-- For details and examples of using dates, please refer to [Sample date formula](url) -->
 
 Throughout the example, variable dates and datetimes are used in place of actual date and datetime fields or values.
 

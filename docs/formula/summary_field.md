@@ -14,7 +14,7 @@ Define the cumulative summary field on the object (located on the main side of t
 
 If the relationship does not already exist, first create a main table/sub-table relationship between the main object and the sub-object on the sub-table side to indicate the relationship between the value of the record being summarized and the record being summarized.
 
-Create a new field on the object where you want to display the value of the cumulative summary field. The summary field summarizes the values in the records on the related object, so the object (the field you created above) should be on the main side of the main table/child table relationship. For instructions on creating custom fields, please refer to[Create custom fields](url).
+Create a new field on the object where you want to display the value of the cumulative summary field. The summary field summarizes the values in the records on the related object, so the object (the field you created above) should be on the main side of the main table/child table relationship. <!-- For instructions on creating custom fields, please refer to[Create custom fields](url). -->
 
 ![Edit object field](/assets/formula/object.png)
 
