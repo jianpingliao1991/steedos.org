@@ -61,8 +61,8 @@ In a formal environment, please be careful to modify certain field properties of
 
 ## Tips for using text formula fields
 
-- To insert text in the formula field, enclose the text in quotation marks. For example, to display "CASE: 123", use this formula `“CASE: “& CaseNumber__c.`
-- Use the backslash (\) character before the quotation mark or backslash to insert it as a literal value in your output value. For example, `"Trouble\ \Case \"Ticket\": ”` in the formula will display `Trouble\Case “Ticket”:` on the detailed information page (not currently supported, that is, it is currently not possible to write quoted or reverse Slashed string)
+- To insert text in the formula field, enclose the text in quotation marks. For example, to display "CASE: 123", use this formula `"CASE: "& CaseNumber__c.`
+- Use the backslash (\) character before the quotation mark or backslash to insert it as a literal value in your output value. For example, `"Trouble\ \Case \"Ticket\": ”` in the formula will display `Trouble\Case "Ticket":` on the detailed information page (not currently supported, that is, it is currently not possible to write quoted or reverse Slashed string)
 
 ## Tips on cross-object formulas
 
