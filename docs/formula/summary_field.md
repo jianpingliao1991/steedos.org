@@ -16,7 +16,7 @@ If the relationship does not already exist, first create a main table/sub-table 
 
 Create a new field on the object where you want to display the value of the Roll-Up summary field. The summary field summarizes the values in the records on the related object, so the object (the field you created above) should be on the main side of the main table/child table relationship. <!-- For instructions on creating custom fields, please refer to[Create custom fields](url). -->
 
-![Edit object field](/assets/formula/object.png)
+![Edit object field](/assets/formula/summary_field.png)
 
 - **Belonging to：**That is, the main object in the main table/sub-table relationship.
 - **Name to display：**The name you want this summary field to display.
@@ -40,7 +40,7 @@ Create a new field on the object where you want to display the value of the Roll
 
 If you want to include only specific record groups in the summary calculation, you can enter the corresponding filter conditions in the filter conditions.
 
-![Summary filter](/assets/formula/filter.png)
+![Summary filter](/assets/formula/summary_filters.png)
 
 - These filter conditions filter sub-table records instead of main table records.
 - Listed in the field input box are the field names available for filtering in the sub-table object for selection.
