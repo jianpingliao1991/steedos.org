@@ -59,7 +59,7 @@ If you want to include only specific record groups in the summary calculation, y
 
 :::note prompt
 
-The low code of Huayan Cube supports richer filter condition settings, such as filtering by OR logic, supporting multiple OR or AND nesting. For details, please refer to：[Filter condition](/developer/object_filter)
+The low code of Huayan Cube supports richer filter condition settings, such as filtering by OR logic, supporting multiple OR or AND nesting. <!-- For details, please refer to：[Filter condition](/developer/object_filter) -->
 
 :::
 

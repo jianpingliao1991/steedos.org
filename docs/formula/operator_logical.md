@@ -27,7 +27,7 @@ Opportunities with a 90% probability will not receive commission.
 Opportunities with 100% probability and $100000 amount will receive a commission of $2000.
 
 :::note note
-Do not use this function for null comparisons, such as MyDateTime__c == null. Instead, use [ISBLANK](/help/formula/function_logical#isblank)
+Do not use this function for null comparisons, such as MyDateTime__c == null.Instead, use `ISBLANK`. <!-- Instead, use [ISBLANK](/help/formula/function_logical#isblank) -->
 :::
 
 ## <\> And !=（Not equal to）
@@ -46,7 +46,7 @@ IF(Maint_Amount__c + Services_Amount__c <> Amount,
 If the sum of the maintenance amount and service amount of the product is not equal to the product amount, this formula will show "DISCOUNTED" (discounted amount) on the product.Otherwise, show "FULL PRICE" (full price).Note that this example uses two custom amount fields for Maint Amount and Services Amount.
 
 :::note note
-Do not use this function for null comparisons, such as MyDateTime__c != null.Instead, use [ISBLANK](/help/formula/function_logical#isblank).
+Do not use this function for null comparisons, such as MyDateTime__c != null.Instead, use `ISBLANK`.<!-- [ISBLANK](/help/formula/function_logical#isblank). -->
 :::
 
 ## <（less than）
