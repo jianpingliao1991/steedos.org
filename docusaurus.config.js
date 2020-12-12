@@ -9,12 +9,24 @@ module.exports = {
   organizationName: 'steedos', // Usually your GitHub org/user name.
   projectName: 'steedos.org', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      // "light" | "dark"
+      defaultMode: 'light',
+
+      // Hides the switch in the navbar
+      // Useful if you want to support a single color mode
+      disableSwitch: true,
+
+      // Should we use the prefers-color-scheme media-query,
+      // using user system preferences, instead of the hardcoded defaultMode
+      respectPrefersColorScheme: false,
+    },
     baiduAnalytics: {
       trackingID: '59b8a9f85c512f6023347313bb449e04',
     },
     navbar: {
       title: 'Steedos',
-      // style: 'dark',
+      style: 'dark',
       logo: {
         alt: 'Steedos',
         src: 'img/logo.png',
@@ -80,7 +92,7 @@ module.exports = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Steedos, Inc.`,
-    },
+    }
   },
   stylesheets: [
     '/website/libs/tailwind.min.css',
