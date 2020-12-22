@@ -97,8 +97,10 @@ module.exports = {
   stylesheets: [
     '/website/libs/tailwind.min.css',
   ],
-  presets: [
+  plugins: [
     require.resolve('./src/plugins/plugin-baidu-analytics'),
+  ],
+  presets: [
     [
       '@docusaurus/preset-classic',
       {
