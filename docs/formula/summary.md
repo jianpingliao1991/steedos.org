@@ -7,7 +7,7 @@ A formula is an algorithm that derives its value from other fields, expressions,
 
 ## Where can formulas be used?
 
-The formula can be used in many places of Huayan Rubik's cube. Before you start using formulas, understand the differences in their usage.
+The formula can be used in many places of  Steedos. Before you start using formulas, understand the differences in their usage.
 
 - **Approval process:** The condition for entering the approval process is that the definition record must be met. 
 - **Approval steps:** The condition for entering the approval step is that the definition record must be met.
@@ -38,7 +38,7 @@ Usage | When will it be implemented? | Read only? | Null processing can be speci
  - **Amount of money:** Only numeric value can be entered. The default number is 2 decimal places. You can also specify the number of decimal places.
  - **Date:**Returns the date representing a day in the calendar. The current date can be obtained by calling the internal function TODAY () in the formula.
  - **Time and date：**Returns data representing a time in time. The datetime field includes the date and the time of the day consisting of hours, minutes, and seconds. You can use the NOW() function to insert the current date and time into the formula.
- - **Number：**Returns a positive or negative integer or decimal (up to 18 digits). Huayan Rubik's cube uses the rule of rounding and bisecting formula fields. For example, 12.345 becomes 12.35 and - 12.345 becomes - 12.35.
+ - **Number：**Returns a positive or negative integer or decimal (up to 18 digits). Steedos uses the rule of rounding and bisecting formula fields. For example, 12.345 becomes 12.35 and - 12.345 becomes - 12.35.
  - **Percentage：**Returns a number in percent format followed by a percent sign (up to 18 digits). The percentage data is stored as a decimal, and the value is the decimal divided by 100, that is, 90% is equal to 0.90.
  - **Time (temporarily not supported)：**Returns data representing a time in time, no date. The time field contains hours, minutes, seconds, and milliseconds. You can use the TIMENOW() function to insert the current date into the formula.
 
