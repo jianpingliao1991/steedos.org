@@ -59,7 +59,7 @@ If you want to include only specific record groups in the summary calculation, y
 
 :::note prompt
 
-The low code of Huayan Cube supports richer filter condition settings, such as filtering by OR logic, supporting multiple OR or AND nesting. <!-- For details, please refer to：[Filter condition](/developer/object_filter) -->
+The low code of Steedos supports richer filter condition settings, such as filtering by OR logic, supporting multiple OR or AND nesting. <!-- For details, please refer to：[Filter condition](/developer/object_filter) -->
 
 :::
 
@@ -84,11 +84,11 @@ In a formal environment, please be careful to modify certain field properties of
   - When sum is selected as the accumulation type, the number, amount, and percentage fields are available.
   - When min or max is selected as the accumulation type, the number, amount, percentage, date, and date time fields are available.
   - When count is selected as the Roll-Up type, the total number of records in the detail object will be summarized directly, which is independent of the fields of the detail object. There is no need to select "fields to aggregate".
-- Sometimes, you cannot change the field type of the field you refer to in the Roll-Up summary field. This is because the field type that can be calculated in the Roll-Up summary field depends on the field type of the field to be aggregated. Huayan Rubik's cube has not handled such logic verification for the time being. Please change the field type in the formal environment carefully and arbitrarily.
-- After the Roll-Up summary field is created on the object, the field type of the master object / detail object type field in the detail object object on which the summary field depends cannot be changed to the related table or other field types. Huayan Rubik's cube has not handled such logic verification for the time being. Please change the field type in the formal environment carefully and arbitrarily.
+- Sometimes, you cannot change the field type of the field you refer to in the Roll-Up summary field. This is because the field type that can be calculated in the Roll-Up summary field depends on the field type of the field to be aggregated. Steedos has not handled such logic verification for the time being. Please change the field type in the formal environment carefully and arbitrarily.
+- After the Roll-Up summary field is created on the object, the field type of the master object / detail object type field in the detail object object on which the summary field depends cannot be changed to the related table or other field types. Steedos has not handled such logic verification for the time being. Please change the field type in the formal environment carefully and arbitrarily.
 - The Roll-Up summary field can refer to the formula field, that is, "field to aggregate" can select the field of formula field type. When the formula value changes, the Roll-Up summary field will be triggered to summarize and calculate again and update the field value.
 - Roll-Up summary field can also be referenced in formula field. When the value of Roll-Up summary field changes, it will trigger relevant formula field to recalculate its field value.
-- For now, cross object field references or functions (such as now or In today's formula field, Huayan Rubik's cube is treated in the way of ordinary formula, and is not treated differently. However, you should not configure it in this way. This is not only that there should not be such logic in actual demand, but also because this configuration will bring great loss in performance.
+- For now, cross object field references or functions (such as now or In today's formula field, Steedos is treated in the way of ordinary formula, and is not treated differently. However, you should not configure it in this way. This is not only that there should not be such logic in actual demand, but also because this configuration will bring great loss in performance.
 - Currently, formula calculations in workflow rules, validation rules, or other automatic rules that reference the summary field will not be triggered again when the Roll-Up summary field value changes.
 - In the formal environment, please be careful to modify some field properties of the object, such as field type, field formula expression, because field value recalculation may not be triggered again for existing historical record data. Please refer to [Batch recalculation summary value](#batch-recalculate-summary-value) for details.
 - Depending on the number of records affected and other factors, it may take 30 minutes or less to calculate the Roll-Up summary field value.
