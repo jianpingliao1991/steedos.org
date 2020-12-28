@@ -33,7 +33,7 @@ Date and datetime are non exchangeable data types, so when you perform operation
 
 Use the `DATEVALUE( date/time )` function to return the date value of the date time. For example, to get the year from a datetime, use `YEAR( DATEVALUE( date/time ) )`
 
-You can use the `DATETIMEVALUE( TEXT(date) )` function to convert a date value to a date time in GMT time zone. The time will be set to Greenwich mean time (GMT) and then displayed in all user time zones. For Beijing time, `DATETIMEVALUE( TEXT(TODAY()) )` will return to the utc0 of the day, and the Huayan Rubik's cube interface will display 8:00 a.m. of that day instead of 00:00 of the same day. For more information, please refer to [notes about date time and time zone](#notes-about-date-time-and-time-zone)
+You can use the `DATETIMEVALUE( TEXT(date) )` function to convert a date value to a date time in GMT time zone. The time will be set to Greenwich mean time (GMT) and then displayed in all user time zones. For Beijing time, `DATETIMEVALUE( TEXT(TODAY()) )` will return to the utc0 of the day, and the Steedos interface will display 8:00 a.m. of that day instead of 00:00 of the same day. For more information, please refer to [notes about date time and time zone](#notes-about-date-time-and-time-zone)
 
 ## Convert between date time and time
 
