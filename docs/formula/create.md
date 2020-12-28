@@ -55,9 +55,9 @@ In a formal environment, please be careful to modify certain field properties of
 - Reference the auto-number field as a text field in the formula.
 - The output value of your formula must be less than 18 digits.
 - The formula can contain a mixture of numbers, percentages and currencies:`AnnualRevenue / NumberOfEmployees`.
-- When the formula is calculated, other fields referenced by the formula are passed in as variables and when the formula field is displayed on the Huayan Cube interface, the decimal places set on the field will be recognized and the formula field value will be processed by the rounding rule. For example, 12.345 becomes 12.35 and −12.345 becomes -12.35. But the output value of the formula field itself is not affected by the number of decimal places set here, so it should be used in the formula.
+- When the formula is calculated, other fields referenced by the formula are passed in as variables and when the formula field is displayed on the Steedos interface, the decimal places set on the field will be recognized and the formula field value will be processed by the rounding rule. For example, 12.345 becomes 12.35 and −12.345 becomes -12.35. But the output value of the formula field itself is not affected by the number of decimal places set here, so it should be used in the formula.
 - ROUND function to deal with the number of decimal places of the calculation result.
-- To treat any blank field as a zero value, select Treat blank fields as zero. To leave these fields blank, please choose to treat blank fields as blanks.In the low code of Huayan Cube, this attribute defaults to "blank fields as zero".
+- To treat any blank field as a zero value, select Treat blank fields as zero. To leave these fields blank, please choose to treat blank fields as blanks.In the low code of Steedos, this attribute defaults to "blank fields as zero".
 
 ## Tips for using text formula fields
 
@@ -81,5 +81,5 @@ You can enter the `$user` variable in the formula to refer to the relevant infor
 - If the cumulative summary field is referenced by a formula field, then when the summary field is updated, it will also trigger the formula field update recalculation.
 
 :::note prompt
-If there are circular references between formula fields, Huayan Cube can intelligently identify and prevent relevant field configurations from taking effect.
+If there are circular references between formula fields, Steedos can intelligently identify and prevent relevant field configurations from taking effect.
 :::
