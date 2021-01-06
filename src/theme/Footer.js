@@ -32,7 +32,7 @@ class Footer extends React.Component {
     </div> */}
             <div className='grid grid-cols-1 gap-2 mt-3'>
               <a
-                href='https://join.slack.com/t/steedos/shared_invite/zt-jq7eupr9-cgKrUOyWb1zymniRzhH4jg'
+                href='https://join.slack.com/t/steedos/shared_invite/zt-kwq55vm8-879YdS9lVE2yTrd~1w9XtQ'
                 target='_blank'
               >
                 Join me on Slack — it’s a faster, simpler way to work.
