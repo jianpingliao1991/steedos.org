@@ -2,7 +2,7 @@
 title: Formula Best Practices
 ---
 
-In Huayan Rubik's cube, if you need to build more complex formulas, please refer to the following tips to help you plan the formula logic and more easily troubleshoot errors.
+In Steedos, if you need to build more complex formulas, please refer to the following tips to help you plan the formula logic and more easily troubleshoot errors.
 
 ## Formula field restrictions and constraints
 
