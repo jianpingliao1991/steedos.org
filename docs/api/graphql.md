@@ -15,7 +15,7 @@ To support permissions control, you should pass in a `token` or `userSession` on
 
 You can user the GraphQL API to [Query](/docs/api/graphql_query), [Insert](/docs/api/graphql_add), [Edit](/docs/api/graphql_edit) and [Delete](/docs/api/graphql_delete) the data that you have permissions to.
 
-## Access to the address of GraphQL client console
+## GraphQL client console
 
 Suppose you have start a local service of Steedos with the port of 3000, then you can access the GraphQL client console with `http://localhost:3000/graphql`.
 
