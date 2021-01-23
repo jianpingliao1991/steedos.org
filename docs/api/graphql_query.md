@@ -19,7 +19,7 @@ leads(filters:[["status", "=", "Qualified"]], top:1, sort:"name desc")
 
 When somebody access the GraphQL API on Steedos, they can see only the data they have permission to see, see [About data permissions](/docs/api/graphql#about-data-permissions) for more information.
 
-## filters
+## Filters
 
 You can add the query filters after the object name, the filters expression may be an array as a `Steedos Filters` like `[["status", "=", "Qualified"]]` or a text as a standard [OData filtering string](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter) like `"status eq 'Qualified'"`.
 
@@ -45,7 +45,7 @@ query{
 }
 ```
 
-## field structure detail
+## Field Structure Detail
 
 In a GraphQL query, you must define the field structure detail at the end of the object name and brackets.
 
@@ -113,7 +113,7 @@ Get predictable results:
 }
 ```
 
-### suffix __label
+### Suffix __label
 
 If the GraqhQL script has some field that return Date, DateTime, Boolean, etc., and you want to display them directly to your customers, you need to add the `__label` suffix after the field name to indicate that you want to format the field value, otherwise it will return the content of the field stored in the database directly.
 
@@ -195,7 +195,7 @@ If you use GraphQL API to fetch data and show them in the Steedos Page, you shou
 Only when you want to display the field value directly to your customers, you will need to add the `__label` suffix after the field name.
 :::
 
-### prefix related__
+### Prefix related__
 
 If you want each record in the list returned by the GraphQL API interface to carry the associated sub-object records information, you can use `related__` as a prefix to splice the name of the associated sub-object to achieve the goal.
 
@@ -273,7 +273,7 @@ Get predictable results:
 The field name `related__tasks` in the example above based on there is a object named 'tasks' who has a `master-detail` field associated to the Master Object `leads`. 
 :::
 
-## top and skip
+## Top and Skip
 
 You can define how many records you want to skip with a `skip` word, and how many record you want to return with a `top` word.
 
@@ -288,7 +288,7 @@ query{
 }
 ```
 
-## sort
+## Sort
 
 You can define how you want to sort the results with the `sort` word.
 
@@ -305,7 +305,7 @@ query{
 }
 ```
 
-## fields
+## Fields
 
 You can add the query fields after the object name, that represents the which fields on the object you want to fetch.
 

@@ -5,13 +5,13 @@ sidebar_label: GraphQL Auth
 
 To support permission control of the GraphQL API, you should first authorize your GraphQL API so that the API can identify the current user.
 
-## Authorize by token on request header
+## Token on request header
 
 Authorization header is usually used as the API request header whenever a user wants to access a protected route or resource.
 
 The content format of the header is as follows: `Authorization: Bearer <token>`, and `token` is the `X-Auth-Token` value on browser cookie after user logs in.
 
-## Authorize by userSession params in code
+## UserSession params in code
 
 You can also request data on Steedos by GraphQL API passing the userSession params like the code bellow:
 
