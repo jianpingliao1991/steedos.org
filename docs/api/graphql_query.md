@@ -115,7 +115,7 @@ Get predictable results:
 
 ### Suffix __label
 
-If the GraqhQL script has some field that return Date, DateTime, Boolean, etc., and you want to display them directly to your customers, you need to add the `__label` suffix after the field name to indicate that you want to format the field value, otherwise it will return the content of the field stored in the database directly.
+If the GraqhQL script has some field that return Date, DateTime, Boolean, Select, etc., and you want to display them directly to your customers, you need to add the `__label` suffix after the field name to indicate that you want to format the field value, otherwise it will return the content of the field stored in the database directly.
 
 #### Date/DateTime
 
@@ -127,7 +127,13 @@ For example, the `created` field indicates the creation time, it will return a n
 
 For example, the `converted` field indicates whether it is a converted record, it will return a character like `true` or `false`, but the `converted__label` will return a result with a good reading experience like `"Yes"` or `"No"`.
 
-*If the `converted` field is a empty value, then it will return `null` and `created__label` will return a string `"No"`.*
+*If the `converted` field is a empty value, then it will return `null` and `converted__label` will return a string `"No"`.*
+
+#### Select
+
+For example, the `salutation` field indicates a person is 'Male' or 'Female', it may return a character like `1` or `0`, but the `salutation__label` will return a result with a good reading experience like `"Male"` or `"Female"`.
+
+*If the `salutation` field is a empty value, then it will return `null` and `salutation__label` will return a empty string `""`.*
 
 Request all lead records, with some `__label` suffix fields in it:
 
@@ -139,10 +145,10 @@ query{
     // highlight-start
     converted,
     converted__label,
-    // highlight-end
-    // highlight-start
     created,
-    created__label
+    created__label,
+    salutation,
+    salutation__label
     // highlight-end
   }
 }
@@ -161,7 +167,9 @@ Get predictable results:
         "converted": true,
         "converted__label": "Yes",
         "created": "1597979950012",
-        "created__label": "2020-08-21 11:19"
+        "created__label": "2020-08-21 11:19",
+        "salutation": "1",
+        "salutation__label": "Male"
         // highlight-end
       },
       {
@@ -171,7 +179,9 @@ Get predictable results:
         "converted": false,
         "converted__label": "No",
         "created": "1597988499634",
-        "created__label": "2020-08-21 13:41"
+        "created__label": "2020-08-21 13:41",
+        "salutation": "0",
+        "salutation__label": "Female"
         // highlight-end
       },
       {
@@ -181,7 +191,9 @@ Get predictable results:
         "converted": null,
         "converted__label": "No",
         "created": null,
-        "created__label": ""
+        "created__label": "",
+        "salutation": null,
+        "salutation__label": ""
         // highlight-end
       }
     ]
