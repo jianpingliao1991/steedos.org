@@ -1,5 +1,5 @@
 ---
-title: The summary of GraphQL
+title: The Summary of GraphQL
 sidebar_label: Overview
 ---
 
@@ -7,7 +7,7 @@ When you configure objects in Steedos, the [GraphQL](https://graphql.org/) API i
 
 Using the GraphQL API, you can ask for what you need and get exactly that. see [GraphQL](https://graphql.org/) for more information.
 
-## About data permissions
+## About Data Permissions
 
 Steedos supports many kinds of permissions configuration, such as [Permission Set](/docs/metadata/permission_set), [Profile](/docs/metadata/profile), [Permission](/docs/metadata/object/permission) etc. You can use them to implement different permissions for different people to have access to different objects and fields, and what data can be returned, inserted, edited, deleted by the GraphQL API is controlled by these permission configurations.
 
@@ -15,7 +15,7 @@ To support permissions control, you should pass in a `token` or `userSession` on
 
 You can user the GraphQL API to [Query](/docs/api/graphql_query), [Insert](/docs/api/graphql_add), [Edit](/docs/api/graphql_edit) and [Delete](/docs/api/graphql_delete) the data that you have permissions to.
 
-## GraphQL client console
+## GraphQL Client Console
 
 Suppose you have start a local service of Steedos with the port of 3000, then you can access the GraphQL client console with `http://localhost:3000/graphql`.
 
@@ -23,16 +23,15 @@ In the GraphQL client console, you can input the GraphQL script in the left pane
 
 Here are some examples that you can run directly on the client console.
 
-### A basic example
+### A Basic Bxample
 
 Ask for all accounts:
 
 ```graphql
 query{
-  accounts {
+  contacts {
     name,
-    industry,
-    website
+    amount
   }
 }
 ```
@@ -42,10 +41,9 @@ You can also omit the first word that called `query` as follows, which will have
 
 ```graphql
 {
-  accounts {
+  contacts {
     name,
-    industry,
-    website
+    amount
   }
 }
 ```
@@ -59,19 +57,12 @@ Get predictable results:
   "data": {
     "accounts": [
       {
-        "name": "A",
-        "industry": null,
-        "website": "www.some1.com"
+        "name": "Phase 2 Construction Contract",
+        "amount": 70000
       },
       {
-        "name": "B",
-        "industry": "Agriculture",
-        "website": "www.some2.com"
-      },
-      {
-        "name": "C",
-        "industry": "Agriculture",
-        "website": "www.some3.com"
+        "name": "2021 OA Project Maintenance Contract",
+        "amount": 89000
       }
     ]
   }
@@ -86,23 +77,18 @@ The field structure detail is defined like bellow:
 
 ```graphql
 query{
-  object_name{
-    field1_name,
-    field2_name,
+  contracts {
+    name
+    amount
     // highlight-start
-    field3_name {
-      field3_field1_name {
-        field3_field1_field1_name,
-        field3_field1_field2_name{
-          ...
-        }
-      },
-      field3_field2_name,
-      ...
+    othercompany{
+      name
+      owner{
+        name
+      }
     }
     // highlight-end
-    ...
-  }
+  } 
 }
 ```
 
@@ -111,24 +97,21 @@ And it will return a data result like that:
 ```json
 {
   "data": {
-    "object_name": [
+    "contracts": [
       {
-        "field1_name": "field1_value",
-        "field2_name": "field2_value",
-        // highlight-start
-        "field3_name": {
-          "field3_field1_name": {
-            "field3_field1_field1_name": "field3_field1_field1_value",
-            "field3_field1_field2_name": {
-              ...
-            }
-          },
-          "field3_field2_name": "field3_field2_value"
-          ...
+        "name": "Phase 2 Construction Contract",
+        "amount": 70000,
+        "othercompany": {
+          "name": "3M",
+          "owner": {
+            "name": "Litant"
+          }
         }
-        // highlight-end
       },
-      ...
+      {
+        "name": "2021 OA Project Maintenance Contract",
+        "amount": 89000
+      }
     ]
   }
 }
