@@ -7,20 +7,23 @@ To insert data into Steedos via the GraphQL API, you should prefix the script wi
 
 ```graphql
 mutation {
-  tasks_INSERT_ONE(data:{name:"Task One"})
+  tasks__insert(data:{name:"Task One"}) {
+    name
+    _id
+  }
 }
 ```
 
 That represents you shoud replace the `tasks` above with the object name you want to insert record, and replace the `{name:"Task One"}` above with a JSON data you want to insert.
 
-The keyword `INSERT_ONE` in the above script represents to insert one record into Steedos via the GraphQL API.
+The keyword `__insert` in the above script represents to insert one record into Steedos via the GraphQL API.
 
 The graphql script above may return some data like this:
 
 ```json
 {
   "data": {
-    "tasks_INSERT_ONE": {
+    "tasks__insert": {
       "name": "Task One",
       "_id": "5cb98489d09a343e14daae95"
     }

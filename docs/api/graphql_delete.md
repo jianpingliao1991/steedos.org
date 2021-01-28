@@ -7,20 +7,20 @@ To delete data on Steedos via the GraphQL API, you should prefix the script with
 
 ```graphql
 mutation {
-  tasks_DELETE_ONE(_id:"5cb98489d09a343e14daae95")
+  tasks__delete(_id:"5cb98489d09a343e14daae95")
 }
 ```
 
 That represents you shoud replace the `tasks` above with the object name you want to delete record and replace the `_id` value `5cb98489d09a343e14daae95` above with the record's `_id` you want to delete.
 
-The keyword `DELETE_ONE` in the above script represents to delete one record on Steedos via the GraphQL API.
+The keyword `__delete` in the above script represents to delete one record on Steedos via the GraphQL API.
 
 The graphql script above will return some data like this:
 
 ```json
 {
   "data": {
-    "tasks_DELETE_ONE": null
+    "tasks__delete": 1
   }
 }
 ```
